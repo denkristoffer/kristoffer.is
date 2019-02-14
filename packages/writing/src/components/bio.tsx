@@ -1,4 +1,4 @@
-import React from "react";
+import { css } from "@emotion/core";
 import { StaticQuery, graphql } from "gatsby";
 import Image from "gatsby-image";
 
@@ -12,7 +12,7 @@ const Bio = () => {
         const { author, social } = data.site.siteMetadata;
         return (
           <div
-            style={{
+            css={{
               alignItems: "center",
               display: "flex",
               flexDirection: "row",
@@ -22,7 +22,7 @@ const Bio = () => {
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
-              style={{
+              css={{
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
                 minWidth: 50,
@@ -32,7 +32,7 @@ const Bio = () => {
                 borderRadius: "50%",
               }}
             />
-            <p style={{ margin: 0 }}>
+            <p css={{ margin: 0 }}>
               Infrequent writings by{" "}
               <a href={`https://mobile.twitter.com/${social.twitter}`}>
                 {author}

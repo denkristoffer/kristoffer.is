@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, graphql } from "gatsby";
 
 import Bio from "../components/bio";
@@ -16,7 +15,7 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
       <Seo title={post.frontmatter.title} description={post.excerpt} />
       <h1>{post.frontmatter.title}</h1>
       <p
-        style={{
+        css={{
           ...scale(-1 / 5),
           display: "block",
           marginBottom: rhythm(1),
@@ -27,14 +26,14 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
       </p>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr
-        style={{
+        css={{
           marginBottom: rhythm(1),
         }}
       />
       <Bio />
 
       <ul
-        style={{
+        css={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-between",

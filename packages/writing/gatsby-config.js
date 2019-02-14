@@ -75,6 +75,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-remove-trailing-slashes",
-    "gatsby-plugin-typescript",
+    {
+      resolve: "gatsby-plugin-typescript",
+      options: {
+        jsx: "jsx",
+      },
+    },
+    "gatsby-plugin-emotion",
   ],
 };
