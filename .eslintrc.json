@@ -13,6 +13,6 @@
   "rules": {
     "@typescript-eslint/no-non-null-assertion": "off",
     "no-null/no-null": "error",
-    "unicorn/filename-case": ["error", { "case": "camelCase" }]
+    "unicorn/filename-case": "off"
   }
 }
