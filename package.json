@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "now": "13.1.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "1.2.0",
+    "@typescript-eslint/parser": "1.2.0",
+    "eslint": "5.13.0",
+    "eslint-config-prettier": "4.0.0",
+    "eslint-plugin-no-null": "1.0.2",
+    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-unicorn": "7.1.0",
+    "husky": "1.2.1",
+    "prettier": "1.15.3",
+    "pretty-quick": "1.8.0"
+  },
+  "scripts": {
+    "dev": "yarn workspace @kristoffer.is/core dev",
+    "lint": "eslint . --ext .js,.ts",
+    "start": "yarn workspace @kristoffer.is/core start"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

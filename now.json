@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "name": "kristoffer.is",
+  "builds": [
+    {
+      "src": "./packages/writing/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    },
+    {
+      "src": "./packages/static/src/index.html",
+      "use": "@now/html-minifier"
+    },
+    {
+      "src": "./packages/static/src/Inter-italic.var.woff2",
+      "use": "@now/static"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)/$", "status": 301, "headers": { "Location": "/$1" } },
+    { "src": "/writing(.*)", "dest": "/packages/writing$1" },
+    {
+      "src": "/Inter-italic.var.woff2",
+      "dest": "packages/static/src/Inter-italic.var.woff2"
+    },
+    { "src": "/$", "dest": "/packages/static/src/index.html" }
+  ]
+}
