@@ -1,0 +1,10 @@
+{
+  "automergeType": "branch",
+  "extends": [
+    "config:js-app",
+    "schedule:monthly",
+    ":maintainLockFilesMonthly",
+    ":automergeMinor"
+  ],
+  "labels": ["dependencies"]
+}
