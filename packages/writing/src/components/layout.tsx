@@ -92,7 +92,6 @@ const Layout = ({ children, location, title }) => {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer />
       </div>
     </Fragment>
   );
