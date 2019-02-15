@@ -1,7 +1,7 @@
 ---
 title: The Secret History by Donna Tartt
 date: "2019-02-14T19:22:00.000Z"
-tags: ["literature", "book"]
+tags: ["literature"]
 ---
 
 I have a habit of writing down parts of books that in some way stand out to me or that I particularly like. I started doing it during my trip through New Zealand in 2015. One of the first books I did this with was [The Secret History](https://en.wikipedia.org/wiki/The_Secret_History) by Donna Tartt, which I remember buying from a big book and stationary store on Wellington's Lambton Quary with a friend of mine.

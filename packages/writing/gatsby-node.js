@@ -4,7 +4,9 @@ const { createFilePath } = require("gatsby-source-filesystem");
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const blogPost = path.resolve("./src/templates/blog-post.tsx");
+  const blogPost = path.resolve("./src/templates/blogPost.tsx");
+  const tagPage = path.resolve("src/templates/tagPage.tsx");
+
   return graphql(
     `
       {
@@ -19,6 +21,7 @@ exports.createPages = ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                tags
               }
             }
           }
@@ -45,6 +48,32 @@ exports.createPages = ({ graphql, actions }) => {
           slug: post.node.fields.slug,
           previous,
           next,
+        },
+      });
+    });
+
+    // Create tag pages
+    let allTags = [];
+    // Iterate through each post, putting all found tags into `tags`
+    posts.forEach(post => {
+      if (
+        post &&
+        post.node &&
+        post.node.frontmatter &&
+        post.node.frontmatter.tags
+      ) {
+        allTags = allTags.concat(post.node.frontmatter.tags);
+      }
+    });
+
+    const tags = [...new Set(allTags)];
+
+    tags.forEach(tag => {
+      createPage({
+        path: `/tag/${tag}`,
+        component: tagPage,
+        context: {
+          tag,
         },
       });
     });
