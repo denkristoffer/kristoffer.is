@@ -1,4 +1,5 @@
 import { css } from "@emotion/core";
+import { Link } from "gatsby";
 
 import { rhythm } from "../utils/typography";
 
@@ -28,7 +29,7 @@ const Tags = ({ tags }: { tags: Tag[] }) => {
               }
             `}
           >
-            <a href={`/tag/${tag}`}>#{tag}</a>
+            <Link to={`/tag/${tag}`}>#{tag}</Link>
             {extra ? ` ${extra}` : null}
           </li>
         ))}
