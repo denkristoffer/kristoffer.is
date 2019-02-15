@@ -29,7 +29,7 @@ const Tags = ({ tags }: { tags: Tag[] }) => {
             `}
           >
             <a href={`/tag/${tag}`}>#{tag}</a>
-            {extra ? extra : null}
+            {extra ? ` ${extra}` : null}
           </li>
         ))}
       </ul>
