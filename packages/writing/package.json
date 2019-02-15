@@ -43,6 +43,7 @@
     "typography-theme-wordpress-2016": "0.16.18"
   },
   "devDependencies": {
+    "@types/prismjs": "1.9.1",
     "@types/typography": "0.16.2"
   },
   "scripts": {
