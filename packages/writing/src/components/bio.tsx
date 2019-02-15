@@ -1,4 +1,3 @@
-import { css } from "@emotion/core";
 import { StaticQuery, graphql } from "gatsby";
 import Image from "gatsby-image";
 
