@@ -52,6 +52,6 @@
     "now-build": "yarn build",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "type-check": "tsc --noEmit"
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   }
 }
