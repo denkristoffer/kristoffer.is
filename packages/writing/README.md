@@ -8,7 +8,7 @@
 
 1. Open [http://localhost:8000](http://localhost:8000)
 
-## ❤️ Shoutouts
+## ❤️ Shout-outs
 
 This project uses, amongst others:
 
