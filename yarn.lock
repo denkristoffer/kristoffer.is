@@ -1125,7 +1125,7 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.10.2.tgz#a98845168012d7a63a84d50e738829da43bdb0de"
   integrity sha512-RO4ig5taKmcrU4Rex8ojG1gpwFkjddzug9iPQSDvbewHN9vDpcFewevkaOK+KT+w1LeZnxbgOyfXwV4pxsQ4GQ==
 
-"@types/prismjs@^1.9.1":
+"@types/prismjs@1.9.1":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@types/prismjs/-/prismjs-1.9.1.tgz#e63b1ed46f184046615dd87b978f902c9f328649"
   integrity sha512-6TjOUrpDM2yjyPE/bdenDqxfoR4E8ve7coEdtiKg5IMBsjqTGsIN7HF5dpaNg/Ab8VumNeRXI8EjQsyBYWPeNA==
@@ -5382,13 +5382,6 @@ gatsby-plugin-feed@2.0.13:
     mkdirp "^0.5.1"
     pify "^3.0.0"
     rss "^1.2.2"
-
-gatsby-plugin-google-analytics@2.0.13:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.0.13.tgz#31ecf6be05815ba2047ec8cd5129f0bea9d7fd75"
-  integrity sha512-cOfQ+f3FRl0yPm5J9atj23Xp7uGILMpYuPXHpm9nh74Tgg9R8rJyaLZaHpEiA2jdnqGvfLIBsqm6Sh0x/wepGQ==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
 
 gatsby-plugin-manifest@2.0.17:
   version "2.0.17"
