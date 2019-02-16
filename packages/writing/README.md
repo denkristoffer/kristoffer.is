@@ -1,4 +1,4 @@
-# [kristoffer.is](https://kristoffer.is)
+# [kristoffer is writing](https://kristoffer.is/writing)
 
 [Gatsby blog](https://www.gatsbyjs.org/) based on the [Gatsby starter blog](https://github.com/gatsbyjs/gatsby-starter-blog).
 
