@@ -19,9 +19,7 @@
     "pretty-quick": "1.8.0"
   },
   "scripts": {
-    "dev": "yarn workspace @kristoffer.is/core dev",
-    "lint": "eslint . --ext .js,.ts",
-    "start": "yarn workspace @kristoffer.is/core start"
+    "lint": "eslint . --ext .js,.ts"
   },
   "husky": {
     "hooks": {
