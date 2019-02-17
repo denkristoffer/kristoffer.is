@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "kristoffer.is",
+  "alias": "kristoffer.is",
   "builds": [
     {
       "src": "./packages/writing/package.json",
@@ -17,6 +18,11 @@
     }
   ],
   "routes": [
+    {
+      "src": "https://www.kristoffer.is(.*)",
+      "status": 301,
+      "headers": { "Location": "https://kristoffer.is/$1" }
+    },
     { "src": "/(.*)/$", "status": 301, "headers": { "Location": "/$1" } },
     { "src": "/writing(.*)", "dest": "/packages/writing$1" },
     {
