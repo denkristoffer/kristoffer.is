@@ -12,7 +12,7 @@
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.0",
     "eslint-plugin-no-null": "1.0.2",
-    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-prettier": "3.1.2",
     "eslint-plugin-unicorn": "8.0.2",
     "husky": "3.1.0",
     "prettier": "1.16.4",
