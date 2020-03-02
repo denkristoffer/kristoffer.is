@@ -14,7 +14,7 @@
     "eslint-plugin-no-null": "1.0.2",
     "eslint-plugin-prettier": "3.1.2",
     "eslint-plugin-unicorn": "16.1.1",
-    "husky": "3.1.0",
+    "husky": "4.2.3",
     "prettier": "1.19.1",
     "pretty-quick": "1.11.1"
   },
