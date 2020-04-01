@@ -1452,11 +1452,6 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@types/bytes@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/bytes/-/bytes-3.0.0.tgz#549eeacd0a8fecfaa459334583a4edcee738e6db"
-  integrity sha512-ZF43+CIIlzngQe8/Zo7L1kpY9W8O6rO006VDz3c5iM21ddtXWxCEyOXyft+q4pVF2tGqvrVuVrEDH1+gJEi1fQ==
-
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
@@ -9828,12 +9823,10 @@ normalize-url@^4.1.0:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.0.tgz#453354087e6ca96957bd8f5baf753f5982142129"
   integrity sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==
 
-now@14.2.4:
-  version "14.2.4"
-  resolved "https://registry.yarnpkg.com/now/-/now-14.2.4.tgz#f7768954cf242886bb5c618b9b63b9d8f6c7438b"
-  integrity sha512-HfMwF7iwGvv/pBzu9snIwe9r70G7FaA3BBvgChMey5s0HeSfvOJYCP16WC11/ANyV4OOkGHWPSGlMwYCaPRFww==
-  dependencies:
-    "@types/bytes" "3.0.0"
+now@17.1.1:
+  version "17.1.1"
+  resolved "https://registry.yarnpkg.com/now/-/now-17.1.1.tgz#5e5fade17c3f9c3b7e3900be3febf7c21c7d6935"
+  integrity sha512-Hmh8eMSt4FxS1YBwaLrdJuzEVm6ZtS4JCY0AZE+JTnTtDGHVaQMUI85FaPvasSIhKLa+7xf6v7lmTgM39VW/8w==
 
 npm-bundled@^1.0.1:
   version "1.0.5"

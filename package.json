@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "now": "14.2.4"
+    "now": "17.1.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "1.5.0",
