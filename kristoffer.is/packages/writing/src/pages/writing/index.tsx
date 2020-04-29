@@ -11,6 +11,7 @@ export default function Index(): React.ReactElement {
     <>
       <Head>
         <title>kristoffer.is/writing</title>
+        <meta name="Description" content="Writings of Kristoffer Sachse." />
       </Head>
 
       <div
@@ -29,10 +30,10 @@ export default function Index(): React.ReactElement {
 
         <Text>
           I&rsquo;m Kristoffer. I&rsquo;m a programmer interested in design and
-          technology. This website is where I publish things I&rsquo;ve written:
-          Notes, articles, guides, and most importantly thoughts on everything
-          and nothing. They&rsquo;re not all finished or complete. Sometimes I
-          circle back to things, other times I don&rsquo;t.
+          technology. This place is where I publish my writings: Articles,
+          guides, notes and thoughts on everything and nothing. They&rsquo;re
+          not all finished or complete. Sometimes I circle back to things, other
+          times I don&rsquo;t.
         </Text>
 
         <Link href="/writing/things" passHref>

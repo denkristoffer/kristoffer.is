@@ -7,6 +7,7 @@ import { H1 } from "../components/text";
 
 export interface Metadata {
   date: string;
+  excerpt: string;
   title: string;
 }
 
@@ -25,6 +26,7 @@ export default function PostLayout({
     <>
       <Head>
         <title>{metadata.title} – kristoffer.is/writing</title>
+        <meta name="Description" content={metadata.excerpt} />
       </Head>
 
       <article

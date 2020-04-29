@@ -24,6 +24,7 @@ export default function Archive({ posts }: ArchiveProps): React.ReactElement {
     <>
       <Head>
         <title>Everything – kristoffer.is/writing</title>
+        <meta name="Description" content="Everything I’ve published." />
       </Head>
 
       <ul
