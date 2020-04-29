@@ -1,0 +1,18 @@
+{
+  "builds": [
+    { "src": "packages/root/package.json", "use": "@now/next" },
+    { "src": "packages/writing/package.json", "use": "@now/next" }
+  ],
+  "routes": [
+    {
+      "src": ".*",
+      "headers": {
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+      },
+      "continue": true
+    },
+    { "src": "/writing/_next(.*)", "dest": "packages/writing/_next$1" },
+    { "src": "/writing(.*)", "dest": "packages/writing/writing$1" },
+    { "src": "(.*)", "dest": "packages/root$1" }
+  ]
+}

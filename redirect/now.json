@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "src": ".*",
+      "headers": {
+        "Location": "https://kristoffer.is",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+      },
+      "status": 301
+    }
+  ],
+  "version": 2
+}

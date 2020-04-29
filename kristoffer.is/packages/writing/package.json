@@ -1,0 +1,38 @@
+{
+  "name": "@kristoffer.is/writing",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "lint": "eslint . --ext .js,.ts,.tsx,.mdx",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@emotion/babel-plugin": "11.0.0-next.12",
+    "@emotion/css": "11.0.0-next.12",
+    "@emotion/react": "11.0.0-next.12",
+    "@emotion/server": "11.0.0-next.12",
+    "@emotion/styled": "11.0.0-next.12",
+    "@mdx-js/loader": "1.5.8",
+    "@mdx-js/react": "1.5.8",
+    "@next/mdx": "9.3.5",
+    "dayjs": "1.8.24",
+    "next": "9.3.5",
+    "polished": "3.5.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "rehype-accessible-emojis": "0.3.2",
+    "rehype-shiki": "0.0.7",
+    "rehype-slug": "3.0.0",
+    "typescript": "3.8.3"
+  },
+  "devDependencies": {
+    "@denkristoffer/eslint-config": "5.1.0",
+    "@emotion/eslint-plugin": "11.0.0-next.10",
+    "@types/mdx-js__react": "1.5.1",
+    "@types/node": "12.12.35",
+    "@types/react": "16.9.34",
+    "eslint": "6.8.0",
+    "eslint-plugin-mdx": "1.6.9"
+  }
+}

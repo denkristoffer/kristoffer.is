@@ -1,6 +1,0 @@
-{
-  "name": "@kristoffer.is/shared",
-  "private": true,
-  "version": "1.0.0",
-  "main": "src/index.ts"
-}
