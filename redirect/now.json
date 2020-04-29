@@ -6,8 +6,7 @@
         "Location": "https://kristoffer.is$1",
         "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
       },
-      "status": 301
+      "status": 308
     }
-  ],
-  "version": 2
+  ]
 }
