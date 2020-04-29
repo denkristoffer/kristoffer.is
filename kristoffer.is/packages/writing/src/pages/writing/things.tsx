@@ -27,63 +27,65 @@ export default function Archive({ posts }: ArchiveProps): React.ReactElement {
         <meta name="Description" content="Everything I’ve published." />
       </Head>
 
-      <ul
-        css={css`
-          list-style: none;
-          margin: 0;
-          padding: 125px 0 100px;
-        `}
-      >
-        {posts.map((post) => {
-          return (
-            <li
-              css={css`
-                & + & {
-                  margin-top: 100px;
-                }
-              `}
-              key={post.slug}
-            >
-              <article
-                css={(theme) => css`
-                  margin: 0 auto;
-                  max-width: ${theme.sizes.maxWidth};
-                  width: 100%;
+      <main>
+        <ul
+          css={css`
+            list-style: none;
+            margin: 0;
+            padding: 125px 0 100px;
+          `}
+        >
+          {posts.map((post) => {
+            return (
+              <li
+                css={css`
+                  & + & {
+                    margin-top: 100px;
+                  }
                 `}
+                key={post.slug}
               >
-                <header>
-                  <ArchiveH1
-                    css={css`
-                      font-size: 32px;
-                      margin-top: 0;
-                    `}
-                  >
-                    <Link
+                <article
+                  css={(theme) => css`
+                    margin: 0 auto;
+                    max-width: ${theme.sizes.maxWidth};
+                    width: 100%;
+                  `}
+                >
+                  <header>
+                    <ArchiveH1
                       css={css`
-                        color: inherit;
-                        text-decoration: inherit;
+                        font-size: 32px;
+                        margin-top: 0;
                       `}
-                      href={`/writing/${post.slug}`}
                     >
-                      {post.title}
-                    </Link>
-                  </ArchiveH1>
-                </header>
+                      <Link
+                        css={css`
+                          color: inherit;
+                          text-decoration: inherit;
+                        `}
+                        href={`/writing/${post.slug}`}
+                      >
+                        {post.title}
+                      </Link>
+                    </ArchiveH1>
+                  </header>
 
-                {post.excerpt ? (
-                  <>
-                    <Text>{post.excerpt}</Text>
-                  </>
-                ) : null}
+                  {post.excerpt ? (
+                    <>
+                      <Text>{post.excerpt}</Text>
+                    </>
+                  ) : null}
 
-                <Text>
-                  <Link href={`/writing/${post.slug}`}>Read article</Link>
-                </Text>
-              </article>
-            </li>
-          );
-        })}
-      </ul>
+                  <Text>
+                    <Link href={`/writing/${post.slug}`}>Read article</Link>
+                  </Text>
+                </article>
+              </li>
+            );
+          })}
+        </ul>
+      </main>
     </>
   );
 }

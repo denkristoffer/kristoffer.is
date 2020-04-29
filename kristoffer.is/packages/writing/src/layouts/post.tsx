@@ -29,40 +29,42 @@ export default function PostLayout({
         <meta name="Description" content={metadata.excerpt} />
       </Head>
 
-      <article
-        css={css`
-          margin: 0 auto;
-          padding: 125px 0 100px;
-        `}
-      >
-        <header
-          css={(theme) => css`
-            margin: 0 auto 50px;
-            max-width: ${theme.sizes.maxWidth};
-            padding: 0 20px;
+      <main>
+        <article
+          css={css`
+            margin: 0 auto;
+            padding: 125px 0 100px;
           `}
         >
-          <H1
-            css={css`
-              padding: 0;
-            `}
-          >
-            {metadata.title}
-          </H1>
-
-          <div
+          <header
             css={(theme) => css`
-              color: ${theme.colors.metadata};
-              margin: 10px 0 50px;
+              margin: 0 auto 50px;
+              max-width: ${theme.sizes.maxWidth};
+              padding: 0 20px;
             `}
           >
-            Published{" "}
-            <time dateTime={metadata.date}>{date.format("MMMM YYYY")}</time>
-          </div>
-        </header>
+            <H1
+              css={css`
+                padding: 0;
+              `}
+            >
+              {metadata.title}
+            </H1>
 
-        {children}
-      </article>
+            <div
+              css={(theme) => css`
+                color: ${theme.colors.metadata};
+                margin: 10px 0 50px;
+              `}
+            >
+              Published{" "}
+              <time dateTime={metadata.date}>{date.format("MMMM YYYY")}</time>
+            </div>
+          </header>
+
+          {children}
+        </article>
+      </main>
 
       <footer
         css={(theme) => css`

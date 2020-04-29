@@ -14,7 +14,7 @@ export default function Index(): React.ReactElement {
         <meta name="Description" content="Writings of Kristoffer Sachse." />
       </Head>
 
-      <div
+      <main
         css={(theme) => css`
           margin: 0 auto;
           max-width: ${theme.sizes.maxWidth};
@@ -55,7 +55,7 @@ export default function Index(): React.ReactElement {
             </span>
           </Button>
         </Link>
-      </div>
+      </main>
     </>
   );
 }
