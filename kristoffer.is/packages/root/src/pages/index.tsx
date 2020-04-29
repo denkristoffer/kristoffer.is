@@ -1,9 +1,14 @@
 import React from "react";
+import Head from "next/head";
 import Link from "next/link";
 
 export default function Index(): React.ReactElement {
   return (
     <>
+      <Head>
+        <title>kristoffer is&hellip;</title>
+      </Head>
+
       <h1>kristoffer is&hellip;</h1>
 
       <ul>
