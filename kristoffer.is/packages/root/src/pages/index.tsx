@@ -1,6 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
+
+export const config = {
+  unstable_runtimeJS: false,
+};
 
 export default function Index(): React.ReactElement {
   return (
@@ -16,7 +19,7 @@ export default function Index(): React.ReactElement {
           <a href="https://github.com/denkristoffer">&hellip;coding</a>
         </li>
         <li>
-          <Link href="/writing">&hellip;writing</Link>
+          <a href="/writing">&hellip;writing</a>
         </li>
       </ul>
 
