@@ -10,6 +10,10 @@ export default function Index(): React.ReactElement {
     <>
       <Head>
         <title>kristoffer is&hellip;</title>
+
+        <link rel="icon" sizes="32x32" href="/favicon-32.png" />
+        <link rel="apple-touch-icon" href="/favicon-180.png" />
+        <link rel="mask-icon" href="/favicon.svg" color="#ff6c6c" />
       </Head>
 
       <h1>kristoffer is&hellip;</h1>
