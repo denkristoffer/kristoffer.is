@@ -57,17 +57,26 @@ export default function Index(): React.ReactElement {
           }
 
           ul {
+            display: flex;
+            flex-direction: row;
             font-style: italic;
+            justify-content: center;
             list-style: none;
-            margin-bottom: 0;
+            margin: 0;
+            padding: 0;
           }
 
           li {
-            line-height: 1.5em;
+            line-height: 2.67;
+          }
+
+          li + li {
+            margin-left: 80px;
           }
 
           a {
             color: #0366d6;
+            display: inline-block;
           }
 
           @media (prefers-color-scheme: dark) {
