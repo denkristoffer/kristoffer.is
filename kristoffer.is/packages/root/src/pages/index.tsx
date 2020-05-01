@@ -29,6 +29,12 @@ export default function Index(): React.ReactElement {
 
       <style global jsx>
         {`
+          * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+
           html,
           body {
             background: #fff;
@@ -37,15 +43,13 @@ export default function Index(): React.ReactElement {
               sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
               "Segoe UI Symbol";
             font-size: 18px;
-            margin: 0;
-            padding: 0;
+            height: 100%;
+            width: 100%;
           }
 
           body {
-            display: flex;
-            height: 100vh;
-            width: 100vw;
             align-items: center; /* horizontal */
+            display: flex;
             justify-content: center; /* vertical */
           }
 
@@ -53,7 +57,8 @@ export default function Index(): React.ReactElement {
             font-size: 56px;
             font-style: italic;
             font-weight: 650;
-            margin-top: 0;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
           }
 
           ul {
@@ -62,8 +67,6 @@ export default function Index(): React.ReactElement {
             font-style: italic;
             justify-content: center;
             list-style: none;
-            margin: 0;
-            padding: 0;
           }
 
           li {
