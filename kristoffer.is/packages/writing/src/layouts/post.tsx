@@ -25,15 +25,21 @@ export default function PostLayout({
   return (
     <>
       <Head>
-        <title>{metadata.title} – kristoffer.is/writing</title>
-        <meta name="Description" content={metadata.excerpt} />
+        <title>{metadata.title} — kristoffer.is/writing</title>
+        <meta name="description" content={metadata.excerpt} />
       </Head>
 
       <main>
         <article
           css={css`
+            display: flex;
+            flex-direction: column;
             margin: 0 auto;
-            padding: 125px 0 100px;
+            padding: 50px 0 50px;
+
+            @media screen and (min-width: 700px) {
+              padding: 125px 0 100px;
+            }
           `}
         >
           <header

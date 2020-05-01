@@ -13,10 +13,12 @@ export const A = styled("a")`
 `;
 
 export const Blockquote = styled("blockquote")`
+  align-self: center;
   border-left: 2px solid #aaa;
-  margin: 0 auto;
+  margin: 0 20px;
   max-width: ${({ theme }) => theme.sizes.maxWidth};
   padding: 0 0 0 20px;
+  width: calc(100% - 40px);
 
   p + & {
     margin-top: 25px;
@@ -62,21 +64,28 @@ export const H1 = styled("h1")`
   margin: 0 auto;
   max-width: ${({ theme }) => theme.sizes.maxWidth};
   padding: 0 20px;
+  width: 100%;
 `;
 
 export const H2 = styled(H1.withComponent("h2"))`
   font-size: 32px;
   margin: 60px auto 20px;
+  width: 100%;
 `;
 
 // shiki or rehype-shiki isn't inlining the background colour for `<pre>`
 // properly at the moment, so we add it manually
 export const Pre = styled("pre")`
   background: #292d3e; /* shiki fix */
-  border-radius: 3px;
   margin: 0 auto;
   max-width: ${({ theme }) => theme.sizes.maxWidth};
+  overflow-x: scroll;
   padding: 0 20px;
+  width: 100%;
+
+  @media screen and (min-width: ${({ theme }) => theme.sizes.maxWidth}) {
+    border-radius: 3px;
+  }
 
   & code {
     display: block;
@@ -90,11 +99,16 @@ export const Pre = styled("pre")`
 export const Text = styled("p")`
   display: block;
   font-size: ${({ theme }) => theme.typography.fontSize};
-  line-height: ${({ theme }) => theme.typography.lineHeight};
+  line-height: 1.666;
   margin: 0 auto;
   max-width: ${({ theme }) => theme.sizes.maxWidth};
   padding: 0 20px;
   text-align: left;
+  width: 100%;
+
+  @media screen and (min-width: 700px) {
+    line-height: ${({ theme }) => theme.typography.lineHeight};
+  }
 
   blockquote + &,
   & + blockquote,

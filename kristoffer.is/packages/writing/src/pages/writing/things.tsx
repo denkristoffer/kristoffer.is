@@ -23,8 +23,8 @@ export default function Archive({ posts }: ArchiveProps): React.ReactElement {
   return (
     <>
       <Head>
-        <title>Everything – kristoffer.is/writing</title>
-        <meta name="Description" content="Everything I’ve published." />
+        <title>Everything — kristoffer.is/writing</title>
+        <meta name="description" content="Everything I’ve published." />
       </Head>
 
       <main>
@@ -32,7 +32,11 @@ export default function Archive({ posts }: ArchiveProps): React.ReactElement {
           css={css`
             list-style: none;
             margin: 0;
-            padding: 125px 0 100px;
+            padding: 50px 0 50px;
+
+            @media screen and (min-width: 700px) {
+              padding: 125px 0 100px;
+            }
           `}
         >
           {posts.map((post) => {

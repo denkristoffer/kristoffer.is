@@ -11,14 +11,18 @@ export default function Index(): React.ReactElement {
     <>
       <Head>
         <title>kristoffer.is/writing</title>
-        <meta name="Description" content="Writings of Kristoffer Sachse." />
+        <meta name="description" content="Writings of Kristoffer Sachse." />
       </Head>
 
       <main
         css={(theme) => css`
           margin: 0 auto;
           max-width: ${theme.sizes.maxWidth};
-          padding: 125px 0 100px;
+          padding: 50px 0 50px;
+
+          @media screen and (min-width: 700px) {
+            padding: 125px 0 100px;
+          }
         `}
       >
         <Text>
