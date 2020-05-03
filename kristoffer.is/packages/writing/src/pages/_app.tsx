@@ -4,8 +4,8 @@ import { CacheProvider, css, Global, ThemeProvider } from "@emotion/react";
 import { cache } from "@emotion/css";
 import { MDXProvider } from "@mdx-js/react";
 
+import ScrollProvider from "../components/scrollProvider";
 import { theme } from "../lib/theme";
-
 import Link from "../components/link";
 import { Blockquote, Code, H1, H2, Pre, Text } from "../components/text";
 
@@ -27,32 +27,34 @@ export default function App({
   return (
     <CacheProvider value={cache}>
       <ThemeProvider theme={theme}>
-        <MDXProvider components={mdxComponents}>
-          <Global
-            styles={(theme) => css`
-              * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-              }
-
-              body {
-                background: ${theme.colors.background};
-                color: ${theme.colors.color};
-                font-family: ${theme.typography.fontFamily};
-              }
-
-              @media (prefers-color-scheme: dark) {
-                body {
-                  background: #181a1c;
-                  color: #fdfdfd;
+        <ScrollProvider>
+          <MDXProvider components={mdxComponents}>
+            <Global
+              styles={(theme) => css`
+                * {
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
                 }
-              }
-            `}
-          />
 
-          <Component {...pageProps} />
-        </MDXProvider>
+                body {
+                  background: ${theme.colors.background};
+                  color: ${theme.colors.color};
+                  font-family: ${theme.typography.fontFamily};
+                }
+
+                @media (prefers-color-scheme: dark) {
+                  body {
+                    background: #181a1c;
+                    color: #fdfdfd;
+                  }
+                }
+              `}
+            />
+
+            <Component {...pageProps} />
+          </MDXProvider>
+        </ScrollProvider>
       </ThemeProvider>
     </CacheProvider>
   );
