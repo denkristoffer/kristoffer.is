@@ -26,6 +26,9 @@ jobs:
       uses: actions/setup-node@v1.4.2
       with:
         node-version: 12.x
+        
+    - name: Change to workdir
+      run: cd kristoffer.is
 
     - name: Install
       run: yarn
