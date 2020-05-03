@@ -16,6 +16,9 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: kristoffer.is
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -28,17 +31,11 @@ jobs:
         node-version: 12.x
 
     - name: Install
-      env:
-        working-directory: kristoffer.is
       run: cd kristoffer.is && yarn
 
     - name: Lint
-      env:
-        working-directory: kristoffer.is
-      run: yarn workspace @kristoffer.is/writing lint
+      run: yarn workspaces run lint
 
     - name: Typecheck
-      env:
-        working-directory: kristoffer.is
-      run: yarn workspace @kristoffer.is/writing typecheck
+      run: yarn workspaces run typecheck
   
