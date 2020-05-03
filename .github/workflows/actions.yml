@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -7,11 +5,13 @@ name: CI
 on:
   push:
     branches: [ master ]
+    paths: 'kristoffer.is/*'
   pull_request:
     branches: [ master ]
+    paths: 'kristoffer.is/*'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
+jobs:     
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
@@ -26,16 +26,19 @@ jobs:
       uses: actions/setup-node@v1.4.2
       with:
         node-version: 12.x
-        
-    - name: Change to workdir
-      run: cd kristoffer.is
 
     - name: Install
-      run: yarn
+      env:
+        working-directory: kristoffer.is
+      run: cd kristoffer.is && yarn
 
     - name: Lint
+      env:
+        working-directory: kristoffer.is
       run: yarn workspace @kristoffer.is/writing lint
 
     - name: Typecheck
+      env:
+        working-directory: kristoffer.is
       run: yarn workspace @kristoffer.is/writing typecheck
   
