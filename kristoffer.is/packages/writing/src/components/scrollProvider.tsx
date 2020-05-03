@@ -1,13 +1,7 @@
-import React, { createContext, useContext, useEffect } from "react";
+import React, { useEffect } from "react";
 import Router from "next/router";
 
-export const ScrollPositionContext = createContext({
-  triggerScroll: () => null,
-});
-
-export const useScrollPosition = () => useContext(ScrollPositionContext);
-
-const cache: { [path: string]: { x: number; y: number } } = {};
+const cache: { [path: string]: { x?: number; y: number } } = {};
 let routerBound = false;
 let scrollRestored = false;
 let shouldScrollRestore = false;
@@ -24,14 +18,12 @@ export default function ScrollProvider({
       return;
     }
 
-    // Commented out because I'm not sure if its necessary
-    // if (window?.history?.scrollRestoration) {
-    //   window.history.scrollRestoration = 'manual';
-    // }
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
 
     const handleChangeStart = () => {
       cache[Router.asPath] = {
-        x: window.scrollX || window.pageXOffset,
         y: window.scrollY || window.pageYOffset,
       };
       scrollRestored = false;
@@ -39,8 +31,8 @@ export default function ScrollProvider({
 
     const handleChangeComplete = () => {
       if (shouldScrollRestore && cache[Router.asPath]) {
-        const { x, y } = cache[Router.asPath];
-        window.scrollTo(x, y);
+        const { y } = cache[Router.asPath];
+        window.scrollTo(0, y);
         shouldScrollRestore = false;
         scrollRestored = true;
       }
@@ -64,16 +56,5 @@ export default function ScrollProvider({
     // };
   });
 
-  const triggerScroll = () => {
-    if (scrollRestored && cache[Router.asPath]) {
-      const { x, y } = cache[Router.asPath];
-      window.scrollTo(x, y);
-    }
-  };
-
-  return (
-    <ScrollPositionContext.Provider value={{ triggerScroll }}>
-      {children}
-    </ScrollPositionContext.Provider>
-  );
+  return children;
 }
