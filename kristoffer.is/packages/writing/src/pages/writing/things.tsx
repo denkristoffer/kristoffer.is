@@ -7,9 +7,6 @@ import { getAllPosts } from "../../lib/utils";
 import Link from "../../components/link";
 import { H2, Text } from "../../components/text";
 
-// Cache list of posts to get around page rendering without data
-const cache: { [key: string]: any[] } = {};
-
 const ArchiveH1 = H2.withComponent("h1");
 
 interface ArchivePost {
@@ -23,10 +20,6 @@ interface ArchiveProps {
 }
 
 export default function Archive({ posts }: ArchiveProps): React.ReactElement {
-  if (typeof window === "undefined") {
-    cache.posts = posts;
-  }
-
   return (
     <>
       <Head>
@@ -102,13 +95,7 @@ export default function Archive({ posts }: ArchiveProps): React.ReactElement {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  let posts;
-
-  if (cache.posts) {
-    posts = cache.posts;
-  } else {
-    posts = await getAllPosts(["excerpt", "slug", "title"]);
-  }
+  const posts = await getAllPosts(["excerpt", "slug", "title"]);
 
   return {
     props: {
