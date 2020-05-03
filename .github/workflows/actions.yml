@@ -27,6 +27,9 @@ jobs:
       with:
         node-version: 12.x
 
+    - name: Install
+      run: yarn
+
     - name: Lint
       run: yarn workspace @kristoffer.is/writing lint
 
