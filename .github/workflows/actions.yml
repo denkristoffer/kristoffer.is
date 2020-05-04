@@ -10,15 +10,12 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  setup:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: kristoffer.is
+      defaults:
+        run:
+          working-directory: kristoffer.is
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v2
 
@@ -30,8 +27,25 @@ jobs:
       - name: Install
         run: yarn
 
+  check:
+    needs: [setup]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: kristoffer.is
+
       - name: Lint
         run: yarn workspaces run lint
 
       - name: Typecheck
         run: yarn workspaces run typecheck
+
+  build:
+    needs: [setup]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: kristoffer.is
+
+      - name: Build
+        run: yarn workspaces run build
