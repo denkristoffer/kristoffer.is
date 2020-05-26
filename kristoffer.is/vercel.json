@@ -1,7 +1,7 @@
 {
   "builds": [
-    { "src": "packages/root/package.json", "use": "@now/next" },
-    { "src": "packages/writing/package.json", "use": "@now/next" }
+    { "src": "packages/root/package.json", "use": "@vercel/next" },
+    { "src": "packages/writing/package.json", "use": "@vercel/next" }
   ],
   "routes": [
     {
