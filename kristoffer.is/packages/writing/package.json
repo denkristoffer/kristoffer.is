@@ -25,7 +25,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "rehype-accessible-emojis": "0.3.2",
-    "rehype-shiki": "0.0.7",
+    "rehype-shiki": "0.0.8",
     "rehype-slug": "3.0.0",
     "typescript": "3.9.3"
   },
