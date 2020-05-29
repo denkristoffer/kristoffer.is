@@ -14,11 +14,19 @@ export const getPostFilenames = (): string[] => {
   return postFiles;
 };
 
+interface FileContent {
+  metadata: {
+    [key: string]: string;
+  };
+}
+
 const getPostByFilename = async (
   filename: string,
   fields: string[] = [],
 ): Promise<Post> => {
-  const { metadata } = await import(`../pages/writing/${filename}`);
+  const { metadata } = (await import(
+    `../pages/writing/${filename}`
+  )) as FileContent;
   // const fullPath = join(postsDirectory, file);
 
   const slug = filename.replace(/\.mdx?$/, "");
@@ -40,7 +48,7 @@ const getPostByFilename = async (
 
 export const getAllPosts = async (fields: string[] = []): Promise<Post[]> => {
   const filenames = getPostFilenames();
-  let posts = [];
+  let posts: Post[] = [];
 
   for (const filename of filenames) {
     const post = await getPostByFilename(filename, fields);

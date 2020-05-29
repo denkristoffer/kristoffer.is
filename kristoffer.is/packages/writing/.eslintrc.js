@@ -1,16 +1,10 @@
 module.exports = {
-  root: true,
-  extends: ["@denkristoffer/eslint-config", "plugin:mdx/recommended"],
+  extends: "@denkristoffer/eslint-config",
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+  },
   plugins: ["@emotion/eslint-plugin"],
-
-  overrides: [
-    {
-      files: ["**/*.mdx"],
-      rules: {
-        "unicorn/filename-case": "off",
-      },
-    },
-  ],
+  root: true,
   rules: {
     "@emotion/jsx-import": "error",
     "@emotion/syntax-preference": ["error", "string"],
