@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 
 export const config = {
-  // eslint-disable-next-line @typescript-eslint/camelcase
   unstable_runtimeJS: false,
 };
 
