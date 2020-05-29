@@ -20,7 +20,7 @@
     "@mdx-js/react": "1.6.4",
     "@next/mdx": "9.4.4",
     "dayjs": "1.8.28",
-    "next": "9.4.2",
+    "next": "9.4.4",
     "polished": "3.6.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
