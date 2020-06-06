@@ -20,8 +20,15 @@ module.exports = withMDX({
   assetPrefix: isProduction ? "https://kristoffer.is/writing" : "",
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 
-  webpack: (config) => {
+  webpack: (config, { isServer }) => {
     config.node = { fs: "empty" };
+
+    // Generate sitemap on build time
+    if (isServer) {
+      console.log("Generating sitemap");
+      require("./scripts/generateSitemap");
+    }
+
     return config;
   },
 
