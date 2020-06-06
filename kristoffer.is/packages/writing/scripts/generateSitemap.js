@@ -1,4 +1,4 @@
-const { writeFileSync } = require("fs");
+const { existsSync, mkdirSync, writeFileSync } = require("fs");
 const globby = require("globby");
 const prettier = require("prettier");
 
@@ -29,6 +29,10 @@ const prettier = require("prettier");
     </urlset>
   `;
   const formatted = prettier.format(sitemap, { parser: "html" });
+
+  if (!existsSync("public")) {
+    mkdirSync("public");
+  }
 
   writeFileSync("public/sitemap.xml", formatted);
 })();
