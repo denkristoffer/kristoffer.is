@@ -25,6 +25,7 @@ module.exports = withMDX({
 
     // Generate sitemap on build time
     if (isServer) {
+      console.log("Generating sitemap");
       require("./scripts/generateSitemap");
     }
 

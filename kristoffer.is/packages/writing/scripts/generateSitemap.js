@@ -2,7 +2,7 @@ const { writeFileSync } = require("fs");
 const globby = require("globby");
 const prettier = require("prettier");
 
-void (async () => {
+(async () => {
   // Ignore Next.js specific files (e.g., _app.js) and API routes.
   const pages = await globby([
     "src/pages/**/*{.mdx,.tsx}",
