@@ -3,3 +3,4 @@
 **/@types/**
 next.config.js
 **/*.mdx
+scripts/**
