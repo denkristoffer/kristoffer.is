@@ -82,6 +82,10 @@ export default function PostLayout({
         `}
       >
         &copy; 2020 Kristoffer Sachse
+        <img
+          alt=""
+          src="https://kristoffer.goatcounter.com/count?p=/test-img"
+        />
       </footer>
     </>
   );
