@@ -83,7 +83,8 @@ export default function PostLayout({
         `}
       >
         &copy; 2020 Kristoffer Sachse
-        {window && window.location.host === "kristoffer.is" ? (
+        {typeof window !== "undefined" &&
+        window.location.host === "kristoffer.is" ? (
           <img
             alt=""
             src={`https://kristoffer.goatcounter.com/count?p=/${metadata.slug}`}
