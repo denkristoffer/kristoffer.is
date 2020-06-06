@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import dayjs from "dayjs";
 
 import { H1 } from "../components/text";
@@ -22,6 +23,8 @@ export default function PostLayout({
   metadata,
 }: PostLayoutProps): React.ReactElement {
   const date = dayjs(metadata.date);
+  const { pathname } = useRouter();
+  const slug = pathname.replace("/writing/", "");
 
   return (
     <>
@@ -87,7 +90,7 @@ export default function PostLayout({
         window.location.host === "kristoffer.is" ? (
           <img
             alt=""
-            src={`https://kristoffer.goatcounter.com/count?p=/${metadata.slug}`}
+            src={`https://kristoffer.goatcounter.com/count?p=/${slug}`}
           />
         ) : null}
       </footer>
