@@ -86,7 +86,7 @@ export default function PostLayout({
         {window && window.location.host === "kristoffer.is" ? (
           <img
             alt=""
-            src={`https://kristoffer.goatcounter.com/count?p=/${slug}`}
+            src={`https://kristoffer.goatcounter.com/count?p=/${metadata.slug}`}
           />
         ) : null}
       </footer>
