@@ -8,6 +8,7 @@ import { H1 } from "../components/text";
 export interface Metadata {
   date: string;
   excerpt: string;
+  slug: string;
   title: string;
 }
 
@@ -82,10 +83,13 @@ export default function PostLayout({
         `}
       >
         &copy; 2020 Kristoffer Sachse
-        <img
-          alt=""
-          src="https://kristoffer.goatcounter.com/count?p=/test-img"
-        />
+        {typeof window !== "undefined" &&
+        window.location.host === "kristoffer.is" ? (
+          <img
+            alt=""
+            src={`https://kristoffer.goatcounter.com/count?p=/${metadata.slug}`}
+          />
+        ) : null}
       </footer>
     </>
   );
