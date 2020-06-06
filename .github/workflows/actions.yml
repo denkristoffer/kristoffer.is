@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    paths: "kristoffer.is/*"
+    paths: "kristoffer.is/**"
   pull_request:
-    paths: "kristoffer.is/*"
+    paths: "kristoffer.is/**"
 
 jobs:
   ci:
