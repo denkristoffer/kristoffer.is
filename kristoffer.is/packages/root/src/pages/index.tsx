@@ -23,6 +23,9 @@ export default function Index(): React.ReactElement {
           <a href="https://github.com/denkristoffer">&hellip;coding</a>
         </li>
         <li>
+          <a href="https://twitter.com/denkristoffer">&hellip;tweeting</a>
+        </li>
+        <li>
           <a href="/writing">&hellip;writing</a>
         </li>
       </ul>
@@ -59,6 +62,7 @@ export default function Index(): React.ReactElement {
             font-weight: 650;
             letter-spacing: -1px;
             margin-bottom: 20px;
+            text-align: center;
           }
 
           ul {
