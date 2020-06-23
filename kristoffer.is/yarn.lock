@@ -966,17 +966,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.0", "@babel/runtime@^7.9.2":
   version "7.10.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.2.tgz#d103f21f2602497d38348a32e008637d506db839"
   integrity sha512-6sF3uQw2ivImfVIl62RZ7MXhO2tap69WeWK57vAaimT6AZbE4FbqjdEJIN1UqoD6wI6B+1n9UiagafH1sxjOtg==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
-"@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.0", "@babel/runtime@^7.9.2":
-  version "7.10.1"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.1.tgz#b6eb75cac279588d3100baecd1b9894ea2840822"
-  integrity sha512-nQbbCbQc9u/rpg1XCxoMYQTbSMVZjCDxErQ1ClCn9Pvcmv1lGads19ep0a2VsEiIJeHqjZley6EQGEC3Yo1xMA==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1052,22 +1045,23 @@
     eslint-plugin-react-hooks "^4.0.0"
     eslint-plugin-unicorn "^20.0.0"
 
-"@emotion/babel-plugin@11.0.0-next.12", "@emotion/babel-plugin@^11.0.0-next.12":
-  version "11.0.0-next.12"
-  resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.0.0-next.12.tgz#aaf8e2820490a81cbca372c6ce3d16a8f411edf5"
-  integrity sha512-Je1XOoC4pctGkEzMJhUsAPwBxzmaDLOAYsQsx51BYpo09ZQa3bzQb6Aq5CzoamRID49ElTO17K0FdVHMtydv7A==
+"@emotion/babel-plugin@11.0.0-next.13", "@emotion/babel-plugin@^11.0.0-next.12":
+  version "11.0.0-next.13"
+  resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.0.0-next.13.tgz#3bf336ed3fad1a7ac82dff12ef1bc10c3d575acd"
+  integrity sha512-RT72Bcdjv2X/Kn9RyCaj0lTLlV2BjxTJcyjjDB3zaDW1lvdq7h7DqNSDelmSgVYq3arIvkQLi2agUA8nsMybfg==
   dependencies:
     "@babel/helper-module-imports" "^7.7.0"
     "@babel/plugin-syntax-jsx" "^7.2.0"
     "@babel/runtime" "^7.7.2"
     "@emotion/hash" "0.8.0"
     "@emotion/memoize" "0.7.4"
-    "@emotion/serialize" "^1.0.0-next.1"
+    "@emotion/serialize" "^0.11.15-next.2"
     babel-plugin-macros "^2.6.1"
     convert-source-map "^1.5.0"
     escape-string-regexp "^1.0.5"
     find-root "^1.1.0"
     source-map "^0.5.7"
+    stylis "^4.0.1"
 
 "@emotion/cache@^11.0.0-next.12":
   version "11.0.0-next.12"
@@ -1129,6 +1123,17 @@
     "@emotion/utils" "0.11.3"
     "@emotion/weak-memoize" "0.2.5"
     hoist-non-react-statics "^3.3.1"
+
+"@emotion/serialize@^0.11.15-next.2":
+  version "0.11.16"
+  resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-0.11.16.tgz#dee05f9e96ad2fb25a5206b6d759b2d1ed3379ad"
+  integrity sha512-G3J4o8by0VRrO+PFeSc3js2myYNOXVJ3Ya+RGVxnshRYgsvErfAOglKAiy1Eo1vhzxqtUvjCyS5gtewzkmvSSg==
+  dependencies:
+    "@emotion/hash" "0.8.0"
+    "@emotion/memoize" "0.7.4"
+    "@emotion/unitless" "0.7.5"
+    "@emotion/utils" "0.11.3"
+    csstype "^2.5.7"
 
 "@emotion/serialize@^1.0.0-next.1":
   version "1.0.0-next.1"
@@ -2767,7 +2772,7 @@ csso@^4.0.2:
   dependencies:
     css-tree "1.0.0-alpha.39"
 
-csstype@^2.2.0, csstype@^2.6.7:
+csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.7:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
   integrity sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
@@ -7006,6 +7011,11 @@ stylis@3.5.4:
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.5.4.tgz#f665f25f5e299cf3d64654ab949a57c768b73fbe"
   integrity sha512-8/3pSmthWM7lsPBKv7NXkzn2Uc9W7NotcwGNpJaa3k7WMM1XDCA4MgT5k/8BIexd5ydZdboXtU90XH9Ec4Bv/Q==
+
+stylis@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/stylis/-/stylis-4.0.1.tgz#c2c586b630dbf5db48ed3aeb5469a10473c99007"
+  integrity sha512-Q6D+uXxhrf5MfJHUmS58U2mmvflwqYOeg5PXYIIFFlCfuA/Wl/0ej2G0ObT9K3WDGKAYBkqKonmyFSxkoMdHPw==
 
 supports-color@^2.0.0:
   version "2.0.0"
