@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@emotion/babel-plugin": "11.0.0-next.12",
+    "@emotion/babel-plugin": "11.0.0-next.13",
     "@emotion/css": "11.0.0-next.12",
     "@emotion/react": "11.0.0-next.12",
     "@emotion/server": "11.0.0-next.12",
