@@ -1146,12 +1146,12 @@
     "@emotion/utils" "0.11.3"
     csstype "^2.6.7"
 
-"@emotion/server@11.0.0-next.12":
-  version "11.0.0-next.12"
-  resolved "https://registry.yarnpkg.com/@emotion/server/-/server-11.0.0-next.12.tgz#388cd3e2af3bf25aa2d4204afbdc215cd162e0f8"
-  integrity sha512-GwCpiGhp2HEeYISq4Vt29ALtmS5CIFDtq6lUqiyEVOgrSMY6ULOoT+qlO+6sbl68btirOBW1MYb0JMtleZu61A==
+"@emotion/server@11.0.0-next.13":
+  version "11.0.0-next.13"
+  resolved "https://registry.yarnpkg.com/@emotion/server/-/server-11.0.0-next.13.tgz#1ced35c12fa320b64c6b715009a8e4745a2b1c9e"
+  integrity sha512-eIQHGtOWwokWiP6GX4aQ8Tz9vEHWahkSZtCdStMlHjAfqRLpMe05zRgwFArBR09t+RN4VEfY/9XYBjYFcEEqbQ==
   dependencies:
-    "@emotion/utils" "0.11.3"
+    "@emotion/utils" "1.0.0-next.0"
     html-tokenize "^2.0.0"
     multipipe "^1.0.2"
     through "^2.3.8"
