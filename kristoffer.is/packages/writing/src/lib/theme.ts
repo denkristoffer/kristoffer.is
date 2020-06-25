@@ -1,7 +1,11 @@
 type Color = string;
 
 export type Theme = {
-  colors: Record<string, Color>;
+  colors: Record<
+    "accent" | "background" | "code" | "color" | "metadata",
+    Color
+  >;
+  dark: Record<"background" | "color", Color>;
 
   components: {
     button: {
@@ -28,19 +32,20 @@ export type Theme = {
 const colors = {
   accent: "#ff6c6c",
   code: "#ddd",
-  color: "#080808",
+  color: "#282828",
   background: "#fff",
   metadata: "#636363",
 };
 
-// const darkColors = {
-//   ...colors,
-//   background: "#181a1c",
-//   color: "#fdfdfd",
-// };
+const dark = {
+  background: "#181a1c",
+  color: "#d5d2cc",
+  // color: #fdfdfd;
+};
 
 export const theme: Theme = {
   colors,
+  dark,
 
   get components() {
     return {
