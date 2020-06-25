@@ -46,7 +46,11 @@ export default function Index(): React.ReactElement {
           If you find any of it useful or interesting, please feel free to share
           it. You can always{" "}
           <Link href="mailto:hi@kristoffer.is">reach out to me</Link> with
-          thoughts and comments, feedback is always nice.
+          thoughts and comments, feedback is always nice{" "}
+          <span aria-label="folded hands" role="img">
+            🙏
+          </span>
+          .
         </Text>
 
         <Heading>My personal favourites</Heading>
