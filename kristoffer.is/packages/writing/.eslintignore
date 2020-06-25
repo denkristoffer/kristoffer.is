@@ -1,6 +1,7 @@
 **/.next
 **/next-env.d.ts
 **/@types/**
-next.config.js
+**/next.config.js
 **/*.mdx
 scripts/**
+src/lib/next/**

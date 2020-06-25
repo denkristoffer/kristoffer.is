@@ -1,11 +1,10 @@
 import { readdirSync } from "fs";
-import { join } from "path";
+
+import { postsDirectory } from "./next";
 
 interface Post {
   [key: string]: unknown;
 }
-
-const postsDirectory = join(process.cwd(), "src/pages/writing");
 
 export const getPostFilenames = (): string[] => {
   const allFiles = readdirSync(postsDirectory);
