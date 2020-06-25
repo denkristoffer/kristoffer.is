@@ -50,7 +50,6 @@ export default function Index(): React.ReactElement {
           <span aria-label="folded hands" role="img">
             🙏
           </span>
-          .
         </Text>
 
         <Heading>My personal favourites</Heading>
