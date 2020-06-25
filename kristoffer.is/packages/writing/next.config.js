@@ -2,6 +2,9 @@ const rehypeSlug = require("rehype-slug");
 const rehypeShiki = require("rehype-shiki");
 const { rehypeAccessibleEmojis } = require("rehype-accessible-emojis");
 
+const { postsDirectory } = require("./src/lib/next");
+const defaultLayout = require("./src/lib/next/remarkMdxDefaultLayout");
+
 const isProduction = process.env.NODE_ENV === "production";
 
 const withMDX = require("@next/mdx")({
@@ -12,7 +15,15 @@ const withMDX = require("@next/mdx")({
       rehypeSlug,
       [rehypeShiki, { theme: "Material-Theme-Palenight" }],
     ],
-    remarkPlugins: [],
+    remarkPlugins: [
+      [
+        defaultLayout,
+        {
+          path: `${process.cwd()}/src/layouts/post.tsx`,
+          condition: (_tree, file) => file.path.startsWith(postsDirectory),
+        },
+      ],
+    ],
   },
 });
 
