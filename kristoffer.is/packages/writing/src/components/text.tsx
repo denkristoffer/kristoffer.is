@@ -1,8 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import styled from "@emotion/styled";
 
-import { styleCite } from "../lib/styles";
-
 export const A = styled("a")`
   color: #0366d6;
   cursor: pointer;
@@ -30,8 +28,8 @@ export const Blockquote = styled("blockquote")`
   }
 
   cite {
-    ${styleCite};
     display: block;
+    font-style: italic;
     line-height: ${({ theme }) => theme.typography.lineHeight};
     margin: 20px auto 0;
     max-width: ${({ theme }) => theme.sizes.maxWidth};
@@ -72,6 +70,16 @@ export const H2 = styled(H1.withComponent("h2"))`
   font-size: 32px;
   margin: 60px auto 20px;
   width: 100%;
+`;
+
+export const H3 = styled(H1.withComponent("h3"))`
+  font-size: 24px;
+  margin: 60px auto 20px;
+  width: 100%;
+
+  h2 + & {
+    margin-top: 0;
+  }
 `;
 
 // shiki or rehype-shiki isn't inlining the background colour for `<pre>`
@@ -118,4 +126,15 @@ export const Text = styled("p")`
   pre + & {
     margin-top: 25px;
   }
+`;
+
+export const Ul = styled("ul")`
+  display: block;
+  font-size: ${({ theme }) => theme.typography.fontSize};
+  line-height: 1.666;
+  margin: 0 auto;
+  max-width: ${({ theme }) => theme.sizes.maxWidth};
+  padding: 0 20px 0 50px;
+  text-align: left;
+  width: 100%;
 `;

@@ -29,14 +29,15 @@
     "rehype-accessible-emojis": "0.3.2",
     "rehype-shiki": "0.0.8",
     "rehype-slug": "3.0.0",
-    "typescript": "3.9.5"
+    "typescript": "3.9.5",
+    "unist-builder": "2.0.3"
   },
   "devDependencies": {
     "@denkristoffer/eslint-config": "7.0.1",
     "@emotion/eslint-plugin": "11.0.0-next.10",
     "@types/mdx-js__react": "1.5.2",
     "@types/node": "12.12.47",
-    "@types/react": "16.9.38",
+    "@types/react": "16.9.41",
     "eslint": "7.3.1"
   },
   "license": "(MIT OR CC-BY-SA-4.0)"

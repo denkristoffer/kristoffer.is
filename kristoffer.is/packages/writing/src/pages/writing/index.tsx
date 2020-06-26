@@ -1,10 +1,13 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
 import Head from "next/head";
-import Link from "next/link";
+import NextLink from "next/link";
 
 import Button from "../../components/button";
-import { Text } from "../../components/text";
+import Link from "../../components/link";
+import { H3, Text, Ul } from "../../components/text";
+
+const Heading = H3.withComponent("h2");
 
 export default function Index(): React.ReactElement {
   return (
@@ -31,7 +34,6 @@ export default function Index(): React.ReactElement {
             👋
           </span>
         </Text>
-
         <Text>
           I&rsquo;m Kristoffer. I&rsquo;m a programmer interested in design and
           technology. This place is where I publish my writings: Articles,
@@ -40,7 +42,27 @@ export default function Index(): React.ReactElement {
           times I don&rsquo;t.
         </Text>
 
-        <Link href="/writing/things" passHref>
+        <Text>
+          If you find any of it useful or interesting, please feel free to share
+          it. You can always{" "}
+          <Link href="mailto:hi@kristoffer.is">reach out to me</Link> with
+          thoughts and comments, feedback is always nice{" "}
+          <span aria-label="folded hands" role="img">
+            🙏
+          </span>
+        </Text>
+
+        <Heading>My personal favourites</Heading>
+
+        <Ul>
+          <li>
+            <Link href="/writing/what-i-learned-from-working-at-my-first-startup">
+              What I learned from working at my first startup
+            </Link>
+          </li>
+        </Ul>
+
+        <NextLink href="/writing/things" passHref>
           <Button
             css={css`
               margin: 50px 20px 0;
@@ -58,7 +80,7 @@ export default function Index(): React.ReactElement {
               📖
             </span>
           </Button>
-        </Link>
+        </NextLink>
       </main>
     </>
   );
