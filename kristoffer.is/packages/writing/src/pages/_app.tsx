@@ -13,9 +13,11 @@ import {
   H2,
   H3,
   Hr,
+  Ol,
   Pre,
   Sup,
   Text,
+  Ul,
 } from "../components/text";
 
 const mdxComponents = {
@@ -27,9 +29,11 @@ const mdxComponents = {
   h3: H3,
   hr: Hr,
   inlineCode: Code,
+  ol: Ol,
   p: Text,
   pre: Pre,
   sup: Sup,
+  ul: Ul,
 };
 
 export default function App({
