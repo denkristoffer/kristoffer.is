@@ -136,7 +136,9 @@ export const Text = styled("p")`
   & + blockquote,
   & + &,
   & + pre,
-  pre + & {
+  ol + &,
+  pre + &,
+  ul + & {
     margin-top: 25px;
   }
 `;
@@ -150,4 +152,10 @@ export const Ul = styled("ul")`
   padding: 0 20px 0 50px;
   text-align: left;
   width: 100%;
+
+  p + & {
+    margin-top: 25px;
+  }
 `;
+
+export const Ol = Ul.withComponent("ol");
