@@ -72,7 +72,17 @@ export default function PostLayout({
             </div>
           </header>
 
-          {children}
+          <div
+            css={css`
+              .footnote-backref {
+                font-size: 14px;
+                margin-left: 5px;
+                text-decoration: none;
+              }
+            `}
+          >
+            {children}
+          </div>
         </article>
       </main>
 

@@ -6,7 +6,17 @@ import { MDXProvider } from "@mdx-js/react";
 
 import { theme } from "../lib/theme";
 import Link from "../components/link";
-import { Blockquote, Code, H1, H2, H3, Pre, Text } from "../components/text";
+import {
+  Blockquote,
+  Code,
+  H1,
+  H2,
+  H3,
+  Hr,
+  Pre,
+  Sup,
+  Text,
+} from "../components/text";
 
 const mdxComponents = {
   a: Link,
@@ -15,9 +25,11 @@ const mdxComponents = {
   h1: H1,
   h2: H2,
   h3: H3,
+  hr: Hr,
   inlineCode: Code,
   p: Text,
   pre: Pre,
+  sup: Sup,
 };
 
 export default function App({
