@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import styled from "@emotion/styled";
+import { rgba } from "polished";
 
 export const A = styled("a")`
   color: #0366d6;
@@ -82,6 +83,14 @@ export const H3 = styled(H1.withComponent("h3"))`
   }
 `;
 
+export const Hr = styled("hr")`
+  background: ${({ theme }) => rgba(theme.colors.metadata, 0.5)};
+  border: 0;
+  height: 1px;
+  margin: 100px auto 50px;
+  max-width: 700px;
+`;
+
 // shiki or rehype-shiki isn't inlining the background colour for `<pre>`
 // properly at the moment, so we add it manually
 export const Pre = styled("pre")`
@@ -103,6 +112,10 @@ export const Pre = styled("pre")`
     max-width: ${({ theme }) => theme.sizes.maxWidth};
     padding: 17px 0;
   }
+`;
+
+export const Sup = styled("sup")`
+  font-size: 12px;
 `;
 
 export const Text = styled("p")`
