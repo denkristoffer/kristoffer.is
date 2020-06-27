@@ -15,7 +15,7 @@ export const A = styled("a")`
 export const Blockquote = styled("blockquote")`
   align-self: center;
   border-left: 2px solid #aaa;
-  margin: 0 20px;
+  margin: 0 auto;
   max-width: ${({ theme }) => theme.sizes.maxWidth};
   padding: 0 0 0 20px;
   width: calc(100% - 40px);
