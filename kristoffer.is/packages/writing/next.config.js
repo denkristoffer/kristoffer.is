@@ -38,6 +38,8 @@ module.exports = withMDX({
     if (isServer) {
       console.log("Generating sitemap");
       require("./scripts/generateSitemap");
+      console.log("Generating feed");
+      require("./scripts/generateFeed");
     }
 
     return config;
