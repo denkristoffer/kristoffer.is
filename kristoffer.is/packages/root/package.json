@@ -17,7 +17,7 @@
     "typescript": "3.9.6"
   },
   "devDependencies": {
-    "@denkristoffer/eslint-config": "7.0.1",
+    "@denkristoffer/eslint-config": "7.1.0",
     "@types/react": "16.9.43",
     "eslint": "7.4.0",
     "prettier": "2.0.5"
