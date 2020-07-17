@@ -29,7 +29,7 @@
     "rehype-accessible-emojis": "0.3.2",
     "rehype-shiki": "0.0.8",
     "rehype-slug": "3.0.0",
-    "typescript": "3.9.6",
+    "typescript": "3.9.7",
     "unist-builder": "2.0.3"
   },
   "devDependencies": {
