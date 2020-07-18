@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import { useCallback, useState } from "react";
 
 import { Text } from "./text";
-import CurrencyInput, { parseNumber } from "./currencyInput";
+import CurrencyInput from "./currencyInput";
 
 const ARBEJDSMARKEDSBIDRAG = 0.08;
 const YEARLY_TOPSKAT_LIMIT = 531000;
