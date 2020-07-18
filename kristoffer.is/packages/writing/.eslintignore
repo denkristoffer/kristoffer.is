@@ -5,3 +5,4 @@
 **/*.mdx
 scripts/**
 src/lib/next/**
+src/cypress/**
