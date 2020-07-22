@@ -19,7 +19,7 @@
     "@mdx-js/loader": "1.6.13",
     "@mdx-js/react": "1.6.13",
     "@next/mdx": "9.4.4",
-    "dayjs": "1.8.29",
+    "dayjs": "1.8.30",
     "globby": "11.0.1",
     "next": "9.4.4",
     "polished": "3.6.5",
