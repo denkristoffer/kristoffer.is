@@ -17,7 +17,7 @@
     "@emotion/server": "11.0.0-next.13",
     "@emotion/styled": "11.0.0-next.13",
     "@mdx-js/loader": "1.6.13",
-    "@mdx-js/react": "1.6.13",
+    "@mdx-js/react": "1.6.14",
     "@next/mdx": "9.4.4",
     "dayjs": "1.8.30",
     "globby": "11.0.1",
