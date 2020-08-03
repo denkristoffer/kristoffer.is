@@ -1234,10 +1234,10 @@
     "@emotion/weak-memoize" "0.2.5"
     stylis "^4.0.1"
 
-"@emotion/css@11.0.0-next.13":
-  version "11.0.0-next.13"
-  resolved "https://registry.yarnpkg.com/@emotion/css/-/css-11.0.0-next.13.tgz#18a926dd0b0e985e0ea14cbc3dc0311b43f11b4a"
-  integrity sha512-aNxotsUJ+kr8Nh/gkLLMf6yBS5HTIXq0caonOpidB5BenL9E8441RxJDEaTnTZUWvT97f4EieYrcadqDdqz48A==
+"@emotion/css@11.0.0-next.14":
+  version "11.0.0-next.14"
+  resolved "https://registry.yarnpkg.com/@emotion/css/-/css-11.0.0-next.14.tgz#c568af88eafa42fa11ca0f1c2845f02049f20d92"
+  integrity sha512-/9zeBHtkBllEl6tiO/PP26RAmW0N7O/Gx+WnVmIo/2OlEMXGEWpz0Tt2upVLrgechbo4aL4bSESMvVQwbVNovA==
   dependencies:
     "@emotion/babel-plugin" "^11.0.0-next.13"
     "@emotion/cache" "^11.0.0-next.13"
