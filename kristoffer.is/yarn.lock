@@ -1272,10 +1272,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
   integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
 
-"@emotion/react@11.0.0-next.13":
-  version "11.0.0-next.13"
-  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.0.0-next.13.tgz#7099e5e704cb0ae841fb982ee9298bcb8446d066"
-  integrity sha512-9DOAY4N1PfdbXmcPMadUfGt2AoWNTHk4VP0P2bI39WxGxO6BKevcQSvGXZRHaZ+4aZwVGu7/eDrqO29v1QJ35g==
+"@emotion/react@11.0.0-next.14":
+  version "11.0.0-next.14"
+  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.0.0-next.14.tgz#1f99c84b419d9f28c04d8ecc412a81df13e29bdb"
+  integrity sha512-QfAd0D+CNPWSjIyfcf1IGNZ21WJJmmUIYpQ9V1IsCjo8mGpNggiageBPrjloLW53BNq+xUysnKCvfTR/l0sTZA==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@emotion/cache" "^11.0.0-next.13"
