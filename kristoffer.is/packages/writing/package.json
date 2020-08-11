@@ -13,9 +13,9 @@
   "dependencies": {
     "@emotion/babel-plugin": "11.0.0-next.13",
     "@emotion/css": "11.0.0-next.14",
-    "@emotion/react": "11.0.0-next.13",
-    "@emotion/server": "11.0.0-next.13",
-    "@emotion/styled": "11.0.0-next.13",
+    "@emotion/react": "11.0.0-next.14",
+    "@emotion/server": "11.0.0-next.14",
+    "@emotion/styled": "11.0.0-next.14",
     "@mdx-js/loader": "1.6.16",
     "@mdx-js/react": "1.6.16",
     "@next/mdx": "9.5.2",

@@ -1288,10 +1288,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
   integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
 
-"@emotion/react@11.0.0-next.13":
-  version "11.0.0-next.13"
-  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.0.0-next.13.tgz#7099e5e704cb0ae841fb982ee9298bcb8446d066"
-  integrity sha512-9DOAY4N1PfdbXmcPMadUfGt2AoWNTHk4VP0P2bI39WxGxO6BKevcQSvGXZRHaZ+4aZwVGu7/eDrqO29v1QJ35g==
+"@emotion/react@11.0.0-next.14":
+  version "11.0.0-next.14"
+  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.0.0-next.14.tgz#1f99c84b419d9f28c04d8ecc412a81df13e29bdb"
+  integrity sha512-QfAd0D+CNPWSjIyfcf1IGNZ21WJJmmUIYpQ9V1IsCjo8mGpNggiageBPrjloLW53BNq+xUysnKCvfTR/l0sTZA==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@emotion/cache" "^11.0.0-next.13"
@@ -1312,10 +1312,10 @@
     "@emotion/utils" "0.11.3"
     csstype "^2.5.7"
 
-"@emotion/server@11.0.0-next.13":
-  version "11.0.0-next.13"
-  resolved "https://registry.yarnpkg.com/@emotion/server/-/server-11.0.0-next.13.tgz#1ced35c12fa320b64c6b715009a8e4745a2b1c9e"
-  integrity sha512-eIQHGtOWwokWiP6GX4aQ8Tz9vEHWahkSZtCdStMlHjAfqRLpMe05zRgwFArBR09t+RN4VEfY/9XYBjYFcEEqbQ==
+"@emotion/server@11.0.0-next.14":
+  version "11.0.0-next.14"
+  resolved "https://registry.yarnpkg.com/@emotion/server/-/server-11.0.0-next.14.tgz#ce1de11302251e9968e042451fc88438e840cf41"
+  integrity sha512-wPyWLa9BAMnkZgI+8fRPTQe+fTvApv04cCoX9kYx7L3S84kus3AWIvoDYNnVpHDQWrWVS1FgiqUI1pWqYAWt0A==
   dependencies:
     "@emotion/utils" "1.0.0-next.0"
     html-tokenize "^2.0.0"
@@ -1327,10 +1327,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-1.0.0-next.2.tgz#76fd251dc19e570e6e3493919035c599f9256b2c"
   integrity sha512-UV7Du8QMU3q8q6dSyBxTw10aWDA021tmt1xOgIQts6Z/zhqExHOGb0sBeu9rdtxV12XqVw+OxzcwEDI7UApMmQ==
 
-"@emotion/styled@11.0.0-next.13":
-  version "11.0.0-next.13"
-  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-11.0.0-next.13.tgz#11cb2b2f3e4ab8b0cbe7bb5a6595d5c478945719"
-  integrity sha512-+BWuJrO6op1RnFi1pJ3VBZ2Lf4qExdQqH/jAv+DKjGQUyr7c2qa/LkhroVEKYWpj46/7gSr/izP9b/5eZDu+8w==
+"@emotion/styled@11.0.0-next.14":
+  version "11.0.0-next.14"
+  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-11.0.0-next.14.tgz#296735ccd9e96e37ac66d60367315a0441335325"
+  integrity sha512-VllPdNqJyQKVMAYZ/2mrRa67HAYh7713ij+S2hrV4et8RwOYl7n4mfCfBEgrKk6fwm715gHhL4FpYFd7oLnfGw==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@emotion/babel-plugin" "^11.0.0-next.13"
