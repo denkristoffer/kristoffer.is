@@ -1222,7 +1222,7 @@
     eslint-plugin-react-hooks "^4.0.0"
     eslint-plugin-unicorn "^20.0.0"
 
-"@emotion/babel-plugin@11.0.0-next.13", "@emotion/babel-plugin@^11.0.0-next.13":
+"@emotion/babel-plugin@11.0.0-next.13":
   version "11.0.0-next.13"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.0.0-next.13.tgz#3bf336ed3fad1a7ac82dff12ef1bc10c3d575acd"
   integrity sha512-RT72Bcdjv2X/Kn9RyCaj0lTLlV2BjxTJcyjjDB3zaDW1lvdq7h7DqNSDelmSgVYq3arIvkQLi2agUA8nsMybfg==
@@ -1239,6 +1239,24 @@
     find-root "^1.1.0"
     source-map "^0.5.7"
     stylis "^4.0.1"
+
+"@emotion/babel-plugin@^11.0.0-next.13", "@emotion/babel-plugin@^11.0.0-next.15":
+  version "11.0.0-next.15"
+  resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.0.0-next.15.tgz#a40ab47ce479760d152f48250573477db5162cc7"
+  integrity sha512-DfcKqdLYA9XI6prKPTN+sdi9WMESWheJjjjvfmZfByaHb1wolYxVRCXVQ6kKKESPSoYUC9CS/TRAwo5yUZRzbw==
+  dependencies:
+    "@babel/helper-module-imports" "^7.7.0"
+    "@babel/plugin-syntax-jsx" "^7.2.0"
+    "@babel/runtime" "^7.7.2"
+    "@emotion/hash" "0.8.0"
+    "@emotion/memoize" "0.7.4"
+    "@emotion/serialize" "^1.0.0-next.3"
+    babel-plugin-macros "^2.6.1"
+    convert-source-map "^1.5.0"
+    escape-string-regexp "^1.0.5"
+    find-root "^1.1.0"
+    source-map "^0.5.7"
+    stylis "^4.0.2"
 
 "@emotion/cache@^11.0.0-next.13", "@emotion/cache@^11.0.0-next.15":
   version "11.0.0-next.15"
@@ -1343,15 +1361,15 @@
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-1.0.0-next.3.tgz#0fadc7275ac45638a5b5249227612c97bfdf25e0"
   integrity sha512-EdvC7vk7K5Dl4lMJ5qKQKe0b5VWbETbG+KuOz1N5cuqYon38XpFWtewankWv0t7fqOVSYNl8jIZr5pzPMQ3o2Q==
 
-"@emotion/styled@11.0.0-next.14":
-  version "11.0.0-next.14"
-  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-11.0.0-next.14.tgz#296735ccd9e96e37ac66d60367315a0441335325"
-  integrity sha512-VllPdNqJyQKVMAYZ/2mrRa67HAYh7713ij+S2hrV4et8RwOYl7n4mfCfBEgrKk6fwm715gHhL4FpYFd7oLnfGw==
+"@emotion/styled@11.0.0-next.15":
+  version "11.0.0-next.15"
+  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-11.0.0-next.15.tgz#c636f45850acf4738f96fda111d3739f668ec1e2"
+  integrity sha512-fGgFnaaemquA4GAit5C4ZqTU9dtL0DMblfUkOhsadOamLwOImDPDnLDZ+uRvgoW/i8FCr5W5euGNO4NmIJbDzQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@emotion/babel-plugin" "^11.0.0-next.13"
+    "@emotion/babel-plugin" "^11.0.0-next.15"
     "@emotion/is-prop-valid" "0.9.0-next.1"
-    "@emotion/serialize" "^0.11.15-next.2"
+    "@emotion/serialize" "^1.0.0-next.3"
     "@emotion/utils" "1.0.0-next.0"
 
 "@emotion/unitless@0.7.5":
