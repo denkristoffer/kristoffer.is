@@ -1210,7 +1210,7 @@
     eslint-plugin-react-hooks "^4.0.0"
     eslint-plugin-unicorn "^20.0.0"
 
-"@emotion/babel-plugin@11.0.0-next.15", "@emotion/babel-plugin@^11.0.0-next.15":
+"@emotion/babel-plugin@11.0.0-next.15":
   version "11.0.0-next.15"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.0.0-next.15.tgz#a40ab47ce479760d152f48250573477db5162cc7"
   integrity sha512-DfcKqdLYA9XI6prKPTN+sdi9WMESWheJjjjvfmZfByaHb1wolYxVRCXVQ6kKKESPSoYUC9CS/TRAwo5yUZRzbw==
@@ -1221,6 +1221,24 @@
     "@emotion/hash" "0.8.0"
     "@emotion/memoize" "0.7.4"
     "@emotion/serialize" "^1.0.0-next.3"
+    babel-plugin-macros "^2.6.1"
+    convert-source-map "^1.5.0"
+    escape-string-regexp "^1.0.5"
+    find-root "^1.1.0"
+    source-map "^0.5.7"
+    stylis "^4.0.2"
+
+"@emotion/babel-plugin@^11.0.0-next.15", "@emotion/babel-plugin@^11.0.0-next.17":
+  version "11.0.0-next.17"
+  resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.0.0-next.17.tgz#221020f82cb553416d352f6f5f565fe1e6fd5a9d"
+  integrity sha512-KbjU0kmuwhNBWOa3aSwLdi99fVzhEMnqoNI4/fx5yr+GuF5VxRedQbnT1c+oOGzks7GPkPDdE4kPcnsP2mUGDA==
+  dependencies:
+    "@babel/helper-module-imports" "^7.7.0"
+    "@babel/plugin-syntax-jsx" "^7.2.0"
+    "@babel/runtime" "^7.7.2"
+    "@emotion/hash" "0.8.0"
+    "@emotion/memoize" "0.7.4"
+    "@emotion/serialize" "^1.0.0-next.5"
     babel-plugin-macros "^2.6.1"
     convert-source-map "^1.5.0"
     escape-string-regexp "^1.0.5"
@@ -1289,15 +1307,15 @@
     "@emotion/weak-memoize" "0.2.5"
     hoist-non-react-statics "^3.3.1"
 
-"@emotion/serialize@^1.0.0-next.3":
-  version "1.0.0-next.3"
-  resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-1.0.0-next.3.tgz#88a854140504de62caf337bc82e2f3944eed7ce3"
-  integrity sha512-WfFdxoAgWwzLuzLRKQH4PmsodL4gLtN/Sa1w59gXHxQ8YL7FXTi9X7oDyoX4c0nfBqc+GcgFEkyznwLctoAo3Q==
+"@emotion/serialize@^1.0.0-next.3", "@emotion/serialize@^1.0.0-next.5":
+  version "1.0.0-next.5"
+  resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-1.0.0-next.5.tgz#ef4ad18bc52c0f0189f16139dd3db6392af7183b"
+  integrity sha512-9mRUdbnMMzJBJfjJAbsksv72B95X88EOqGLeb97lRntuYNEmxSEOTTjO/muIUEm2rqW03Z2hy6wt0oXKVMdyiQ==
   dependencies:
     "@emotion/hash" "0.8.0"
     "@emotion/memoize" "0.7.4"
     "@emotion/unitless" "0.7.5"
-    "@emotion/utils" "1.0.0-next.0"
+    "@emotion/utils" "1.0.0-next.1"
     csstype "^3.0.2"
 
 "@emotion/server@11.0.0-next.17":
@@ -1315,16 +1333,16 @@
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-1.0.0-next.3.tgz#0fadc7275ac45638a5b5249227612c97bfdf25e0"
   integrity sha512-EdvC7vk7K5Dl4lMJ5qKQKe0b5VWbETbG+KuOz1N5cuqYon38XpFWtewankWv0t7fqOVSYNl8jIZr5pzPMQ3o2Q==
 
-"@emotion/styled@11.0.0-next.15":
-  version "11.0.0-next.15"
-  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-11.0.0-next.15.tgz#c636f45850acf4738f96fda111d3739f668ec1e2"
-  integrity sha512-fGgFnaaemquA4GAit5C4ZqTU9dtL0DMblfUkOhsadOamLwOImDPDnLDZ+uRvgoW/i8FCr5W5euGNO4NmIJbDzQ==
+"@emotion/styled@11.0.0-next.17":
+  version "11.0.0-next.17"
+  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-11.0.0-next.17.tgz#91f212a011a8394906607e6f812151384fc4a894"
+  integrity sha512-IK/+6w7c8POrYwiB2UrndqJC/UEoQiAKSAAa8XJ0/p2NylL8V53QVr/U2a7zomQFGX8YVLC084/VB9rPBqRCNw==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@emotion/babel-plugin" "^11.0.0-next.15"
+    "@emotion/babel-plugin" "^11.0.0-next.17"
     "@emotion/is-prop-valid" "0.9.0-next.1"
-    "@emotion/serialize" "^1.0.0-next.3"
-    "@emotion/utils" "1.0.0-next.0"
+    "@emotion/serialize" "^1.0.0-next.5"
+    "@emotion/utils" "1.0.0-next.1"
 
 "@emotion/unitless@0.7.5":
   version "0.7.5"
