@@ -19,7 +19,7 @@
   "devDependencies": {
     "@denkristoffer/eslint-config": "7.2.0",
     "@types/react": "16.9.49",
-    "eslint": "7.9.0",
+    "eslint": "7.10.0",
     "prettier": "2.1.2"
   },
   "license": "MIT"
