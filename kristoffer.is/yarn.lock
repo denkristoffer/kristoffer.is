@@ -1336,10 +1336,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-1.0.0-next.5.tgz#9eaa02c966675a84d2a31f01978bf88612c984f4"
   integrity sha512-f7c7CPqx5R1S2o8cD0pxv4f/bkd6IFPItb1TWAtcacxumlKk25Bid9J1bReCUneGE1WIVap2/a4oEfArvtbaKg==
 
-"@emotion/styled@11.0.0-next.17":
-  version "11.0.0-next.17"
-  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-11.0.0-next.17.tgz#91f212a011a8394906607e6f812151384fc4a894"
-  integrity sha512-IK/+6w7c8POrYwiB2UrndqJC/UEoQiAKSAAa8XJ0/p2NylL8V53QVr/U2a7zomQFGX8YVLC084/VB9rPBqRCNw==
+"@emotion/styled@11.0.0-next.19":
+  version "11.0.0-next.19"
+  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-11.0.0-next.19.tgz#5b8a586f992fd9d898de92bc6babeb31d2eb5115"
+  integrity sha512-CzQUsWhX1tcJPcDMh0P0QHQNi11paQhCbbAsd90ENwft82LQiUnQ0+PXm0pdvYjpGazsn1IMVTmdZYhj0iq7Zg==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@emotion/babel-plugin" "^11.0.0-next.17"
