@@ -37,7 +37,7 @@
     "@emotion/eslint-plugin": "11.0.0-next.10",
     "@types/mdx-js__react": "1.5.3",
     "@types/node": "12.12.67",
-    "@types/react": "16.9.51",
+    "@types/react": "16.9.52",
     "eslint": "7.11.0"
   },
   "license": "(MIT OR CC-BY-SA-4.0)"
