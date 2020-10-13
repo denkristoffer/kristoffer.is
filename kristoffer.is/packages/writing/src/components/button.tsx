@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/react";
 import { darken } from "polished";
 
-interface ButtonProps {
+interface ButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children?: React.ReactNode;
   value?: string;
 }

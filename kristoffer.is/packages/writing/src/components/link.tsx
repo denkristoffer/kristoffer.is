@@ -4,7 +4,9 @@ import { UrlObject } from "url";
 
 import { A } from "../components/text";
 
-type LinkProps = NextLinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement>;
+type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+  href: NextLinkProps["href"];
+};
 
 const isUrlObject = (toTest: NextLinkProps["href"]): toTest is UrlObject => {
   return (toTest as UrlObject).path !== undefined;
