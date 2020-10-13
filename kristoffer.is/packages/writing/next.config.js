@@ -28,7 +28,7 @@ const withMDX = require("@next/mdx")({
 });
 
 module.exports = withMDX({
-  assetPrefix: isProduction ? "https://kristoffer.is/writing" : "",
+  assetPrefix: isProduction ? "/writing" : "",
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 
   webpack: (config, { isServer }) => {

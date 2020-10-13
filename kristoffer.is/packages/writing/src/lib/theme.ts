@@ -1,11 +1,17 @@
 type Color = string;
 
 export type Theme = {
-  colors: Record<"accent" | "background" | "color" | "metadata", Color>;
-  dark: Record<"background" | "color", Color>;
+  colors: Record<
+    "accent" | "background" | "color" | "metadata" | "warning",
+    Color
+  >;
+  dark: Partial<Theme["colors"]>;
 
   components: {
     button: {
+      primary: Record<string, string>;
+    };
+    input: {
       primary: Record<string, string>;
     };
   };
@@ -28,14 +34,16 @@ export type Theme = {
 
 const colors = {
   accent: "#ff6c6c",
-  color: "#282828",
   background: "#fff",
+  color: "#282828",
   metadata: "#636363",
+  warning: "#ffba00",
 };
 
 const dark = {
   background: "#181a1c",
   color: "#d5d2cc",
+  warning: "#cc9500",
   // color: #fdfdfd;
 };
 
@@ -50,11 +58,18 @@ export const theme: Theme = {
           background: colors.accent,
         },
       },
+      input: {
+        primary: {
+          border: "#a9a9a9",
+          color: colors.color,
+          placeholder: "#a9a9a9",
+        },
+      },
     };
   },
 
   fontFamilies: {
-    monospace: 'SFMono-Regular, Menlo,Consolas, "Liberation Mono", monospace',
+    monospace: 'SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace',
     sansSerif:
       'system-ui, -apple-system, "Segoe UI", Helvetica, Arial,sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
   },
