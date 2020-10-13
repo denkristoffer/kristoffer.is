@@ -43,7 +43,7 @@
     "@types/react": "16.9.52",
     "cypress": "4.10.0",
     "eslint": "7.11.0",
-    "jest": "26.1.0"
+    "jest": "26.5.3"
   },
   "license": "(MIT OR CC-BY-SA-4.0)"
 }
