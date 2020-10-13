@@ -50,9 +50,7 @@ export default function PensionCalculator(): React.ReactElement {
   const pensionPayment = active
     ? formatter.format(monthlyPensionPayment(monthlyWage))
     : "0 kr.";
-  console.log("monthlyWage", monthlyWage);
-  console.log("active", active);
-  console.log("pensionPayment", pensionPayment);
+
   const handleValueChange = useCallback(
     (value: string) => {
       const number = Number.parseFloat(value);
