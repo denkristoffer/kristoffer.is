@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
 
-interface AsideProps {
+export interface AsideProps {
   children: React.ReactNode;
 }
 
