@@ -25,7 +25,7 @@
     "next": "9.5.5",
     "polished": "4.0.2",
     "prettier": "2.1.2",
-    "react": "16.13.1",
+    "react": "16.14.0",
     "react-dom": "16.13.1",
     "rehype-accessible-emojis": "0.3.2",
     "rehype-shiki": "0.0.9",
