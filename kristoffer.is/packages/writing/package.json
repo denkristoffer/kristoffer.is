@@ -39,7 +39,7 @@
     "@emotion/eslint-plugin": "11.0.0-rc.0",
     "@types/jest": "26.0.14",
     "@types/mdx-js__react": "1.5.3",
-    "@types/node": "12.12.67",
+    "@types/node": "12.12.68",
     "@types/react": "16.9.52",
     "cypress": "4.10.0",
     "eslint": "7.11.0",
