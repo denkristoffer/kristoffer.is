@@ -5,7 +5,7 @@
   ],
   "headers": [
     {
-      "source": ".*",
+      "source": "(.*)",
       "headers": [
         {
           "key": "strict-transport-security",
