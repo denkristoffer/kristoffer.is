@@ -26,7 +26,7 @@
     "polished": "4.0.3",
     "prettier": "2.1.2",
     "react": "16.14.0",
-    "react-dom": "16.14.0",
+    "react-dom": "17.0.1",
     "rehype-accessible-emojis": "0.3.2",
     "rehype-shiki": "0.0.9",
     "rehype-slug": "3.0.0",
