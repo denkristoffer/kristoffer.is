@@ -3,6 +3,8 @@ import { AppProps } from "next/app";
 import { CacheProvider, css, Global, ThemeProvider } from "@emotion/react";
 import { cache } from "@emotion/css";
 import { MDXProvider } from "@mdx-js/react";
+// https://github.com/emotion-js/emotion/blob/ad1a84d513ac627b7121d77b0a18fef95bf05571/docs/typescript.mdx#css-prop
+import type {} from "@emotion/react/types/css-prop";
 
 import { theme } from "../lib/theme";
 import Link from "../components/link";

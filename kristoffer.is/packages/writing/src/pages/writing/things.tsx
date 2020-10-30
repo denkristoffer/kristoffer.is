@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { css, jsx } from "@emotion/react";
+import { Fragment } from "react";
+import { css } from "@emotion/react";
 import Head from "next/head";
 import { GetStaticProps } from "next";
 
@@ -21,7 +21,7 @@ interface ArchiveProps {
 
 export default function Archive({ posts }: ArchiveProps): React.ReactElement {
   return (
-    <>
+    <Fragment>
       <Head>
         <title>Everything — kristoffer.is/writing</title>
         <meta name="description" content="Everything I’ve published." />
@@ -76,9 +76,9 @@ export default function Archive({ posts }: ArchiveProps): React.ReactElement {
                   </header>
 
                   {post.excerpt ? (
-                    <>
+                    <Fragment>
                       <Text>{post.excerpt}</Text>
-                    </>
+                    </Fragment>
                   ) : null}
 
                   <Text>
@@ -90,7 +90,7 @@ export default function Archive({ posts }: ArchiveProps): React.ReactElement {
           })}
         </ul>
       </main>
-    </>
+    </Fragment>
   );
 }
 

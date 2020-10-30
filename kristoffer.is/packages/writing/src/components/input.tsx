@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { css, jsx } from "@emotion/react";
+import { css } from "@emotion/react";
 import { forwardRef } from "react";
 
 export type InputProps = React.InputHTMLAttributes<HTMLInputElement>;

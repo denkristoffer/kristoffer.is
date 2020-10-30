@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { css, jsx } from "@emotion/react";
+import { Fragment } from "react";
+import { css } from "@emotion/react";
 import Head from "next/head";
 import NextLink from "next/link";
 
@@ -11,7 +11,7 @@ const Heading = H3.withComponent("h2");
 
 export default function Index(): React.ReactElement {
   return (
-    <>
+    <Fragment>
       <Head>
         <title>kristoffer.is/writing</title>
         <meta name="description" content="Writings of Kristoffer Sachse." />
@@ -82,6 +82,6 @@ export default function Index(): React.ReactElement {
           </Button>
         </NextLink>
       </main>
-    </>
+    </Fragment>
   );
 }

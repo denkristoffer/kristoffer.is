@@ -3,17 +3,27 @@
     { "src": "packages/root/package.json", "use": "@vercel/next" },
     { "src": "packages/writing/package.json", "use": "@vercel/next" }
   ],
-  "routes": [
+  "headers": [
     {
-      "src": ".*",
-      "headers": {
-        "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
-      },
-      "continue": true
+      "source": "(.*)",
+      "headers": [
+        {
+          "key": "strict-transport-security",
+          "value": "max-age=31536000; includeSubDomains; preload"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/writing/_next(.*)",
+      "destination": "packages/writing/_next$1"
     },
-    { "src": "/writing/_next(.*)", "dest": "packages/writing/_next$1" },
-    { "src": "/writing/sitemap.xml", "dest": "packages/writing/sitemap.xml" },
-    { "src": "/writing(.*)", "dest": "packages/writing/writing$1" },
-    { "src": "(.*)", "dest": "packages/root$1" }
+    {
+      "source": "/writing/sitemap.xml",
+      "destination": "packages/writing/sitemap.xml"
+    },
+    { "source": "/writing(.*)", "destination": "packages/writing/writing$1" },
+    { "source": "(.*)", "destination": "packages/root$1" }
   ]
 }
