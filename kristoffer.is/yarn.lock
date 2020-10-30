@@ -1360,10 +1360,10 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@denkristoffer/eslint-config@7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@denkristoffer/eslint-config/-/eslint-config-7.2.0.tgz#0a1b69073ec7b4f2be74f3f2f924fce1888683c6"
-  integrity sha512-mj/76JtqErNIxgg4osv1WOaUm4IotE+kXDuyCA8M6V1T6rG/sLjylcN2zQAW2+By8CyBva3eVI86Sn6dKgiCaQ==
+"@denkristoffer/eslint-config@7.5.0":
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/@denkristoffer/eslint-config/-/eslint-config-7.5.0.tgz#073ccd21e2caf58ef246aad6ccbc6a43ddf2b0c7"
+  integrity sha512-4QvAdnjlMEs3HNbpL+mhSX9GYlefiThv7a4Zgqu8dLVVBee2oJnvTIjx5tBzIL8u0yMuVWHVQVB1cN58+826jQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^3.0.2"
     "@typescript-eslint/parser" "^3.0.2"
