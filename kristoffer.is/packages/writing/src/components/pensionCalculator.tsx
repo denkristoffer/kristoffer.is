@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { useCallback, useState } from "react";
@@ -59,7 +60,7 @@ export default function PensionCalculator(): React.ReactElement {
   );
 
   return (
-    <>
+    <Fragment>
       <Text>
         Er du i tvivl om du bør indbetale til ratepensionen? Udregn din
         månedlige indbetaling ved at indtaste din månedsløn før skat (men efter
@@ -218,6 +219,6 @@ export default function PensionCalculator(): React.ReactElement {
           </TextSpan>
         </div>
       </div>
-    </>
+    </Fragment>
   );
 }

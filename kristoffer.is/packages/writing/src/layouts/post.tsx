@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { css } from "@emotion/react";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -26,7 +27,7 @@ export default function PostLayout({
   const slug = pathname.replace("/writing/", "");
 
   return (
-    <>
+    <Fragment>
       <Head>
         <title>{metadata.title} — kristoffer.is/writing</title>
         <meta name="description" content={metadata.excerpt} />
@@ -103,6 +104,6 @@ export default function PostLayout({
           />
         ) : null}
       </footer>
-    </>
+    </Fragment>
   );
 }
