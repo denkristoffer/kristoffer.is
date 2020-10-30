@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { css, jsx } from "@emotion/react";
+import { css } from "@emotion/react";
 import Head from "next/head";
 import NextLink from "next/link";
 

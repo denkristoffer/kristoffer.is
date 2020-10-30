@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { css, jsx } from "@emotion/react";
+import { css } from "@emotion/react";
 import { darken } from "polished";
 
 interface ButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {

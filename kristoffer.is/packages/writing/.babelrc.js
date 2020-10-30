@@ -1,11 +1,3 @@
 module.exports = {
-  plugins: [
-    [
-      "@emotion/babel-plugin",
-      {
-        cssPropOptimization: false,
-      },
-    ],
-  ],
-  presets: ["next/babel"],
+  presets: ["next/babel", "@emotion/babel-preset-css-prop"],
 };
