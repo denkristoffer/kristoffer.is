@@ -14,6 +14,9 @@ export type Theme = {
     input: {
       primary: Record<string, string>;
     };
+    note: {
+      primary: Record<string, string>;
+    };
   };
 
   fontFamilies: {
@@ -58,11 +61,18 @@ export const theme: Theme = {
           background: colors.accent,
         },
       },
+
       input: {
         primary: {
           border: "#a9a9a9",
           color: colors.color,
           placeholder: "#a9a9a9",
+        },
+      },
+
+      note: {
+        primary: {
+          background: "#fff7d0",
         },
       },
     };
