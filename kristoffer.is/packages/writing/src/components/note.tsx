@@ -8,21 +8,32 @@ import React from "react";
 const StyledAside = styled(Aside)`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: ${({ theme }) => theme.colors.warning};
-  color: #fff;
+  background: ${({ theme }) => theme.components.note.primary.background};
+  color: ${({ theme }) => theme.colors.color};
 
   @media (prefers-color-scheme: dark) {
-    background: ${({ theme }) => theme.dark.warning};
+    background: #3b361e;
+    color: #fff;
   }
+`;
+
+const Title = styled(Text)`
+  font-weight: 600;
 `;
 
 interface NoteProps {
   children: React.ReactNode;
+  title?: string;
 }
 
-export default function Note({ children }: NoteProps): React.ReactElement {
+export default function Note({
+  children,
+  title,
+}: NoteProps): React.ReactElement {
   return (
     <StyledAside>
+      {title ? <Title>{title}</Title> : null}
+
       <Text>{children}</Text>
     </StyledAside>
   );
