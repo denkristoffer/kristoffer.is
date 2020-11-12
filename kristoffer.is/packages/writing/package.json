@@ -15,7 +15,7 @@
     "@emotion/babel-preset-css-prop": "11.0.0-rc.0",
     "@emotion/css": "11.0.0-rc.0",
     "@emotion/react": "11.0.0-rc.0",
-    "@emotion/server": "11.0.0-rc.0",
+    "@emotion/server": "11.0.0",
     "@emotion/styled": "11.0.0-rc.0",
     "@mdx-js/loader": "1.6.21",
     "@mdx-js/react": "1.6.21",
