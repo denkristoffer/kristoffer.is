@@ -12,7 +12,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@emotion/babel-preset-css-prop": "11.0.0-rc.0",
+    "@emotion/babel-preset-css-prop": "11.0.0",
     "@emotion/css": "11.0.0-rc.0",
     "@emotion/react": "11.0.0-rc.0",
     "@emotion/server": "11.0.0",
