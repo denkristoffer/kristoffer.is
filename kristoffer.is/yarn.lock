@@ -1447,7 +1447,7 @@
     "@emotion/babel-plugin" "^11.0.0"
     "@emotion/babel-plugin-jsx-pragmatic" "^0.1.5"
 
-"@emotion/cache@^11.0.0", "@emotion/cache@^11.0.0-rc.0":
+"@emotion/cache@^11.0.0":
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-11.0.0.tgz#473adcaf9e04c6a0e30fb1421e79a209a96818f8"
   integrity sha512-NStfcnLkL5vj3mBILvkR2m/5vFxo3G0QEreYKDGHNHm9IMYoT/t3j6xwjx6lMI/S1LUJfVHQqn0m9wSINttTTQ==
@@ -1491,20 +1491,20 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
   integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
 
-"@emotion/react@11.0.0-rc.0":
-  version "11.0.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.0.0-rc.0.tgz#3f2aa6a86e1e0f606d9bd6627880c5e660901c25"
-  integrity sha512-XN1ZV5LG2fP6qBc/ebFch4pXxrGJUPaJ66X+2FBphOrFgWaUTIRbdbtW1MR5nu3xEW4g9/FsE0+n+c9+G7DZcw==
+"@emotion/react@11.0.0":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.0.0.tgz#6b39b5bb5e2d48d720a420ff885a95ff268dae0d"
+  integrity sha512-mMQOuJcCVHUHUKZMamCbNnuUEgEff1W1JL3/1jGXFN52Ik5R/2ccVb3FherYFkSJkkjkPC3dUfFSeisXVh9Spg==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@emotion/cache" "^11.0.0-rc.0"
-    "@emotion/serialize" "^1.0.0-rc.0"
-    "@emotion/sheet" "^1.0.0-rc.0"
-    "@emotion/utils" "^1.0.0-rc.0"
+    "@emotion/cache" "^11.0.0"
+    "@emotion/serialize" "^1.0.0"
+    "@emotion/sheet" "^1.0.0"
+    "@emotion/utils" "^1.0.0"
     "@emotion/weak-memoize" "^0.2.5"
     hoist-non-react-statics "^3.3.1"
 
-"@emotion/serialize@^1.0.0", "@emotion/serialize@^1.0.0-rc.0":
+"@emotion/serialize@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-1.0.0.tgz#1a61f4f037cf39995c97fc80ebe99abc7b191ca9"
   integrity sha512-zt1gm4rhdo5Sry8QpCOpopIUIKU+mUSpV9WNmFILUraatm5dttNEaYzUWWSboSMUE6PtN2j1cAsuvcugfdI3mw==
@@ -1525,7 +1525,7 @@
     multipipe "^1.0.2"
     through "^2.3.8"
 
-"@emotion/sheet@^1.0.0", "@emotion/sheet@^1.0.0-rc.0":
+"@emotion/sheet@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-1.0.0.tgz#a0ef06080f339477ad4ba7f56e1c931f7ba50822"
   integrity sha512-cdCHfZtf/0rahPDCZ9zyq+36EqfD/6c0WUqTFZ/hv9xadTUv2lGE5QK7/Z6Dnx2oRxC0usfVM2/BYn9q9B9wZA==
@@ -1546,7 +1546,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
-"@emotion/utils@^1.0.0", "@emotion/utils@^1.0.0-rc.0":
+"@emotion/utils@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@emotion/utils/-/utils-1.0.0.tgz#abe06a83160b10570816c913990245813a2fd6af"
   integrity sha512-mQC2b3XLDs6QCW+pDQDiyO/EdGZYOygE8s5N5rrzjSI4M3IejPE/JPndCBwRT9z982aqQNi6beWs1UeayrQxxA==
