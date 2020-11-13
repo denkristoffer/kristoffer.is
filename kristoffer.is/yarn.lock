@@ -8233,10 +8233,10 @@ rehype-shiki@0.0.9:
     unist-builder "^2.0.3"
     unist-util-visit "^2.0.3"
 
-rehype-slug@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/rehype-slug/-/rehype-slug-4.0.0.tgz#447b8adfe2e00384df466c5e0b43206572887b76"
-  integrity sha512-ufOroD6A/UP/oM5vfPK0zKVIILptb3EELm/OEEswjMkq8AavoxRMF07cer29P1Si0h4HCe0tc+PorsMF03vtUA==
+rehype-slug@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/rehype-slug/-/rehype-slug-4.0.1.tgz#313274501cffa997bd52dd57bf2da5851959747a"
+  integrity sha512-KIlJALf9WfHFF21icwTd2yI2IP+RQRweaxH9ChVGQwRYy36+hiomG4ZSe0yQRyCt+D/vE39LbAcOI/h4O4GPhA==
   dependencies:
     github-slugger "^1.1.1"
     hast-util-has-property "^1.0.0"
