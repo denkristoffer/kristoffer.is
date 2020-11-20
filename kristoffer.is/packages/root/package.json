@@ -20,7 +20,7 @@
     "@denkristoffer/eslint-config": "8.1.0",
     "@types/react": "16.9.56",
     "eslint": "7.13.0",
-    "prettier": "2.1.2"
+    "prettier": "2.2.0"
   },
   "license": "MIT"
 }
