@@ -27,6 +27,9 @@ export default function Index(): React.ReactElement {
           <a href="https://twitter.com/denkristoffer">&hellip;tweeting</a>
         </li>
         <li>
+          <a href="https://letterboxd.com/denkristoffer/">&hellip;watching</a>
+        </li>
+        <li>
           <a href="/writing">&hellip;writing</a>
         </li>
       </ul>
