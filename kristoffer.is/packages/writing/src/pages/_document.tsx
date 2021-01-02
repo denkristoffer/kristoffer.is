@@ -8,10 +8,10 @@ interface DocumentProps {
   ids: EmotionCritical["ids"];
 }
 
-export default class DocumentWithLang extends Document<DocumentProps> {
+export default class DocumentWithSsr extends Document<DocumentProps> {
   render(): JSX.Element {
     return (
-      <Html lang="en">
+      <Html>
         <Head>
           <link rel="icon" sizes="32x32" href="/favicon-32.png" />
           <link rel="apple-touch-icon" href="/favicon-180.png" />
@@ -33,7 +33,7 @@ export default class DocumentWithLang extends Document<DocumentProps> {
   }
 }
 
-DocumentWithLang.getInitialProps = async (context) => {
+DocumentWithSsr.getInitialProps = async (context) => {
   const initialProps = await Document.getInitialProps(context);
   const page = await context.renderPage();
   const styles = extractCritical(page.html);
