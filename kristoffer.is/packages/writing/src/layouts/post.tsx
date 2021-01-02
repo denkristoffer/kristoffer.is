@@ -51,6 +51,7 @@ export default function PostLayout({
               margin: 0 auto 50px;
               max-width: ${theme.sizes.maxWidth};
               padding: 0 20px;
+              width: 100%;
             `}
           >
             <H1
