@@ -40,6 +40,17 @@ export default function Button({
         &:active {
           top: 1px;
         }
+
+        @media (prefers-color-scheme: dark) {
+          background-color: ${theme.dark.components.button.primary.background};
+
+          &:hover {
+            background: ${darken(
+              0.1,
+              theme.dark.components.button.primary.background,
+            )};
+          }
+        }
       `}
     >
       {value || children}
