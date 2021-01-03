@@ -91,9 +91,9 @@ export default function PostLayout({
         css={(theme) => css`
           color: ${theme.colors.metadata};
           font-size: 16px;
-          margin: 0 auto 50px;
+          margin: 0 auto;
           max-width: ${theme.sizes.maxWidth};
-          padding: 0 20px;
+          padding: 0 20px 50px;
         `}
       >
         &copy; 2020 Kristoffer Sachse
