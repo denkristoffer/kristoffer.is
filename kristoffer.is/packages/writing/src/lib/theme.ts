@@ -5,7 +5,7 @@ export type Theme = {
     "accent" | "background" | "color" | "metadata" | "warning",
     Color
   >;
-  dark: Partial<Theme["colors"]>;
+  dark: Partial<Theme["colors"]> & { components: Partial<Theme["components"]> };
 
   components: {
     button: {
@@ -48,6 +48,14 @@ const dark = {
   color: "#d5d2cc",
   warning: "#cc9500",
   // color: #fdfdfd;
+
+  components: {
+    button: {
+      primary: {
+        background: "#8b0000",
+      },
+    },
+  },
 };
 
 export const theme: Theme = {
