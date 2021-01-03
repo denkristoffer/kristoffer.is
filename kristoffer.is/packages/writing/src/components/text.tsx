@@ -122,6 +122,7 @@ export const Sup = styled("sup")`
 export const Text = styled("p")`
   display: block;
   font-size: ${({ theme }) => theme.typography.fontSize};
+  hyphens: auto;
   line-height: 1.666;
   margin: 0 auto;
   max-width: ${({ theme }) => theme.sizes.maxWidth};
