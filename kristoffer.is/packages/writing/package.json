@@ -23,7 +23,7 @@
     "dayjs": "1.10.4",
     "globby": "11.0.2",
     "next": "10.0.5",
-    "polished": "4.0.5",
+    "polished": "4.1.0",
     "prettier": "2.2.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
