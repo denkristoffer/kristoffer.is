@@ -19,7 +19,7 @@
     "@emotion/styled": "11.0.0",
     "@mdx-js/loader": "1.6.22",
     "@mdx-js/react": "1.6.22",
-    "@next/mdx": "10.0.5",
+    "@next/mdx": "10.0.6",
     "dayjs": "1.10.4",
     "globby": "11.0.2",
     "next": "10.0.5",
