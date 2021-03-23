@@ -21,7 +21,7 @@
     "@mdx-js/react": "1.6.22",
     "@next/mdx": "10.0.9",
     "dayjs": "1.10.4",
-    "globby": "11.0.2",
+    "globby": "11.0.3",
     "next": "10.0.9",
     "polished": "4.1.1",
     "prettier": "2.2.1",
