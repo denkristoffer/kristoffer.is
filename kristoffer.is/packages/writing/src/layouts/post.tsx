@@ -96,7 +96,7 @@ export default function PostLayout({
           padding: 0 20px 50px;
         `}
       >
-        &copy; 2020 Kristoffer Sachse
+        &copy; Kristoffer Sachse
         {typeof window !== "undefined" &&
         window.location.host === "kristoffer.is" ? (
           <img
