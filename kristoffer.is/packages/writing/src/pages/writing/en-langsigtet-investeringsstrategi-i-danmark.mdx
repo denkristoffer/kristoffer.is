@@ -1,19 +1,22 @@
 import Note from "../../components/note";
 import Aside from "../../components/aside";
+import { Text } from "../../components/text";
 import PensionCalculator from "../../components/pensionCalculator";
 
 export const metadata = {
-  date: "2020-10-13T18:16:56.000Z",
+  date: "2021-04-19T10:42:52.000Z",
   excerpt:
     "Du har besluttet dig for at komme i gang med at investere, måske fordi du er begyndt at tænkte på pension, men det kan være svært at give sig i kast med. Der er mange ting at lære, og det kan virke som en jungle. Hvordan skal man kunne vælge og fravælge, når man ikke kender eller forstår mulighederne? Men selvom det kræver tid og tålmodighed at danne sig et overblik, behøver selve det at investere i virkeligheden slet ikke være så kompliceret.",
   tags: ["investing"],
-  title: "🇩🇰 En langsigtet investeringsstrategi i Danmark anno 2020",
+  title: "🇩🇰 En langsigtet investeringsstrategi i Danmark anno 2021",
 };
+
+export const YEARLY_TOPSKAT_LIMIT = 544800;
+export const YEARLY_RATEPENSION_LIMIT = 58500;
 
 <Note title="Bemærk">
   Denne artikel er en beskrivelse af mine egne erfaringer og motiver for
-  investering. Den er ikke finansiel rådgivning. Jeg er ikke professionel, og
-  kan/vil ikke have din privatøkonomi på samvittigheden.
+  investering. Den er ikke finansiel rådgivning.
 </Note>
 
 ## Indhold
@@ -46,26 +49,47 @@ Tænk på det som at spille et mindre beløb på alle hestene i væddeløbet på
 
 Helt kort: Køb indeksaktier løbende på depoter i den følgende rækkefølge. Sørg for at holde dine omkostninger så lave som muligt, og at beholde aktierne så længe som muligt:
 
-1. Hvis du betaler topskat og ikke allerede har fyldt en ratepension, så er første skridt at indbetale til en sådan for at øge dit årlige skattefradrag. I 2020 kan der indsættes i alt 57.200 kr[^1]. Hvis ikke du betaler topskat, så spring til næste punkt.
-2. Opret en aldersopsparing og fyld den op hvert år. I 2020 kan der indsættes 5.300 kr. årligt[^2].
-3. Opret en aktiesparekonto og fyld den op. I 2020 er indbetalingsgrænsen 100.000 kr. i alt[^3].
+1. Hvis du betaler topskat og ikke allerede har fyldt en ratepension, så er
+   første skridt at indbetale til en sådan for at øge dit årlige skattefradrag.
+   I 2021 kan der indsættes i alt 58.500 kr[^1]. Hvis ikke du betaler topskat,
+   så spring til næste punkt.
+2. Opret en aldersopsparing og fyld den op hvert år. I 2021 kan der
+   indsættes 5.400 kr. årligt[^2].
+3. Opret en aktiesparekonto og fyld den op. I 2021 er indbetalingsgrænsen
+   102.300 kr. i alt[^3].
 4. Opret et aktiedepot og invester resten af dine penge derigennem.
 
 Så kort kan det gøres. Resten af artiklen vil jeg bruge på at forklare lidt yderligere om de forskellige punkter.
 
 ## 1. Topskat og ratepension
 
-Som udgangspunkt kan det generelt ikke svare sig at indbetale til pensionskonti som ratepensionen og livrentepensionen: de modregnes din folkepension, og du binder unødvendigt store beløb af dine penge utroligt længe. Sagen er dog en anden, hvis du betaler topskat. Hvis ikke du allerede har fyldt ratepensionen gennem en arbejdspension, kan du i så fald nemlig øge dit skattefradrag ved indbetaling til en ratepension mod så til gengæld at betale skat af pengene, når du engang indløser pensionen. Dermed får du reelt en større del af dine penge ned under topskattegrænsen, selvom du altså binder nogle af dem til du når pensionsalderen. Indbetal derfor så meget som nødvendigt op til de maksimale 57.200 kr. om året for at komme under topskatteniveau.
+<Text>
+  Som udgangspunkt kan det generelt ikke svare sig at indbetale til
+  pensionskonti som ratepensionen og livrentepensionen: de modregnes din
+  folkepension, og du binder unødvendigt store beløb af dine penge utroligt
+  længe. Sagen er dog en anden, hvis du betaler topskat. Hvis ikke du allerede
+  har fyldt ratepensionen gennem en arbejdspension, kan du i så fald nemlig øge
+  dit skattefradrag ved indbetaling til en ratepension mod så til gengæld at
+  betale skat af pengene, når du engang indløser pensionen. Dermed får du reelt
+  en større del af dine penge ned under topskattegrænsen, selvom du altså binder
+  nogle af dem til du når pensionsalderen. Indbetal derfor så meget som
+  nødvendigt op til de maksimale{" "}
+  {YEARLY_RATEPENSION_LIMIT.toLocaleString("da-DK")} kr. om året for at komme
+  under topskatteniveau.
+</Text>
 
 <Aside>
-  <PensionCalculator />
+  <PensionCalculator
+    pensionLimit={YEARLY_RATEPENSION_LIMIT}
+    topskatLimit={YEARLY_TOPSKAT_LIMIT}
+  />
 </Aside>
 
 Hvis ikke du allerede har en ratepension andre steder, vil jeg anbefale at oprette den ved [Nordnet](https://www.nordnet.dk/dk/tjenester/pension/pensionsdepot#h-Ratepension), da du så kan opsætte den sammen med deres månedsopsparingsprodukt og slippe for at betale kurtage for handlen.
 
 ## Nordnets månedsopsparing
 
-Lad mig derfor lige kort introducere månedsopsparingen: [Nordnets månedsopsparing](https://www.nordnet.dk/maanedsopsparing) er en slags tilvalg, man kan tilføje til sine aktiedepoter på deres platform. Man vælger nogle aktier, man vil købe fast, og bestemmer for hvilket beløb man vil investere. Månedsopsparingen sørger så for at automatisere købsprocessen ved hver d. 5. i måneden at gennemføre handler ud fra hvad du har valgt. Handlen gennemføres kun, hvis der er dækning på kontoen, og dermed kan du springe måneder over ved ikke at øverføre penge til Nordnet. Det smarte er, at du slipper for at betale kurtage ved køb, men til gengæld kan du kun købe nogle af Nordnet særligt udvalgte aktier. Der er heldigvis en række indeks du kan vælge imellem.
+Lad mig derfor lige kort introducere månedsopsparingen: [Nordnets månedsopsparing](https://www.nordnet.dk/maanedsopsparing) er en slags tilvalg, man kan tilføje til sine aktiedepoter på deres platform. Man vælger nogle aktier, man vil købe fast, og bestemmer for hvilket beløb man vil investere. Månedsopsparingen sørger så for at automatisere købsprocessen ved hver d. 8. i måneden at gennemføre handler ud fra hvad du har valgt. Handlen gennemføres kun, hvis der er dækning på kontoen, og dermed kan du springe måneder over ved ikke at øverføre penge til Nordnet. Det smarte er, at du slipper for at betale kurtage ved køb, men til gengæld kan du kun købe nogle af Nordnet særligt udvalgte aktier. Der er heldigvis en række indeks du kan vælge imellem.
 
 Månedsopsparingen er altså en god måde at holde investeringsprocessen nem og hurtig samt holde omkostningerne nede, og den kan bruges både med pensionsdepoter og med depoter til frie midler, altså penge du selv har fuld råderet over.
 
@@ -73,13 +97,13 @@ Månedsopsparingen er altså en god måde at holde investeringsprocessen nem og 
 
 En aldersopsparing er en anden form for pensionsopsparing, der som udgangspunkt er den eneste, der er værd at indbetale til – sagen er dog som allerede nævnt en anden, hvis du betaler topskat.
 
-Aldersopsparingen er værd at bruge, da den adskiller sig fra de andre pensionstyper på nogle vigtige punkter: den modregnes ikke din folkepension, og du beskattes ikke af den, når du engang får den udbetalt. Til gengæld får du ikke fradrag for indbetalinger. Med aldersopsparingen binder du også dine penge meget længe, men i dette tilfælde opvejer fordelene ulemperne, især da pensionsdepoter kun beskattes 15,3%, hvilket er betydeligt mindre end aktiedepoter fra frie midler. Da der kun kan indsættes 5.300 kr. på aldersopsparingen årligt, og der ingen mulighed er for at indbetale bagudrettet, så det er bare om at komme i gang, hvis den skal nå at opbygge en værdi, du kan trække på senere i livet.
+Aldersopsparingen er værd at bruge, da den adskiller sig fra de andre pensionstyper på nogle vigtige punkter: den modregnes ikke din folkepension, og du beskattes ikke af den, når du engang får den udbetalt. Til gengæld får du ikke fradrag for indbetalinger. Med aldersopsparingen binder du også dine penge meget længe, men i dette tilfælde opvejer fordelene ulemperne, især da pensionsdepoter kun beskattes 15,3%, hvilket er betydeligt mindre end aktiedepoter fra frie midler. Da der kun kan indsættes 5.400 kr. på aldersopsparingen årligt, og der ingen mulighed er for at indbetale bagudrettet, så det er bare om at komme i gang, hvis den skal nå at opbygge en værdi, du kan trække på senere i livet.
 
 Aldersopsparingen kan oprettes ved Nordnet, og den kan også kombineres med månedsopsparingen for at undgå kurtage ved køb.
 
 ## 3. Aktiesparekontoen
 
-Aktiesparekontoen er en særlig type depot, som blev indført ved lov i 2019. Formålet var at få flere danskere til at investere, og derfor er beskatningen af kontoen fordelagtig. Afkastet beskattes 17% årligt[^3], lidt højere end pension, men til gengæld kan du trække pengene ud når som helst. Selvom indskudsloftet kun er på 100.000, er aktiesparekontoen altså derudover den bedste måde at investere på i Danmark. Indskudsloftet er totalt, hvilket betyder at du kan lave lige så mange indbetalinger du har lyst til, indtil de 100.000 kr. er nået. Værdien på aktiesparekontoen må godt overstige 100.000, så længe det sker ved at aktierne i depotet stiger i værdi, og ikke ved at du skyder flere penge ind.
+Aktiesparekontoen er en særlig type depot, som blev indført ved lov i 2019. Formålet var at få flere danskere til at investere, og derfor er beskatningen af kontoen fordelagtig. Afkastet beskattes 17% årligt[^3], lidt højere end pension, men til gengæld kan du trække pengene ud når som helst. Selvom indskudsloftet kun er på 102.300, er aktiesparekontoen altså derudover den bedste måde at investere på i Danmark. Indskudsloftet er totalt, hvilket betyder at du kan lave lige så mange indbetalinger du har lyst til, indtil de 102.300 kr. er nået. Værdien på aktiesparekontoen må godt overstige 102.300, så længe det sker ved at aktierne i depotet stiger i værdi, og ikke ved at du skyder flere penge ind.
 
 Jeg vil anbefale at oprette [en aktiesparekonto ved Saxo Bank](https://www.home.saxo/da-dk/accounts/aktiesparekonto), da de er den udbyder af aktiesparekontoen, der har de laveste omkostninger. Saxo Bank tilbyder ikke et månedsopsparingsprodukt, så her må du selv bruge tiden på at købe aktierne. Heldigvis slipper du for at gøre det løbende, når først aktiesparekontoen er fyldt.
 
