@@ -7,8 +7,6 @@ import { Text } from "./text";
 import CurrencyInput from "./currencyInput";
 
 const ARBEJDSMARKEDSBIDRAG = 0.08;
-const YEARLY_TOPSKAT_LIMIT = 531000;
-const YEARLY_RATEPENSION_LIMIT = 57200;
 
 const formatter = Intl.NumberFormat("da-DK", {
   currency: "DKK",
@@ -16,37 +14,53 @@ const formatter = Intl.NumberFormat("da-DK", {
   style: "currency",
 });
 
-const pensionPaymentFromWage = (monthlyWage: number): number => {
+const pensionPaymentFromWageAndLimits = (
+  {
+    pensionLimit: yearlyPensionLimit,
+    topskatLimit: yearlyTopskatLimit,
+  }: { pensionLimit: number; topskatLimit: number },
+  monthlyWage: number,
+): number => {
   const yearlyWage = monthlyWage * 12;
   const yearlyWageAfterArbejdsmarkedsbidrag =
     yearlyWage - yearlyWage * ARBEJDSMARKEDSBIDRAG;
 
-  if (yearlyWageAfterArbejdsmarkedsbidrag < YEARLY_TOPSKAT_LIMIT) {
+  if (yearlyWageAfterArbejdsmarkedsbidrag < yearlyTopskatLimit) {
     return 0;
   }
 
   const difference = Math.abs(
-    yearlyWageAfterArbejdsmarkedsbidrag - YEARLY_TOPSKAT_LIMIT,
+    yearlyWageAfterArbejdsmarkedsbidrag - yearlyTopskatLimit,
   );
   const yearlyPensionPaymentUpToLimit = Math.min(
     difference,
-    YEARLY_RATEPENSION_LIMIT,
+    yearlyPensionLimit,
   );
 
   return yearlyPensionPaymentUpToLimit;
-};
-
-const monthlyPensionPayment = (monthlyWage: number): number => {
-  return pensionPaymentFromWage(monthlyWage) / 12;
 };
 
 const TextSpan = styled(Text.withComponent("span"))`
   padding: 4px 8px;
 `;
 
-export default function PensionCalculator(): React.ReactElement {
+export interface PensionCalculatorProps {
+  pensionLimit: number;
+  topskatLimit: number;
+}
+
+export default function PensionCalculator({
+  pensionLimit,
+  topskatLimit,
+}: PensionCalculatorProps): React.ReactElement {
+  const monthlyPensionPayment = useCallback(
+    (wage: number) =>
+      pensionPaymentFromWageAndLimits({ pensionLimit, topskatLimit }, wage) /
+      12,
+    [pensionLimit, topskatLimit],
+  );
   const [monthlyWage, setMonthlyWage] = useState<number | undefined>();
-  const active = monthlyWage ? monthlyWage.toString().length > 0 : "";
+  const active = monthlyWage && monthlyWage.toString().length > 0;
   const pensionPayment = active
     ? formatter.format(monthlyPensionPayment(monthlyWage))
     : "0 kr.";
