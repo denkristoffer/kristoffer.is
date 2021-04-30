@@ -6,26 +6,3 @@ updates:
     interval: daily
     time: "04:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: "@types/node"
-    versions:
-    - ">= 13.a, < 14"
-  - dependency-name: "@types/node"
-    versions:
-    - ">= 14.a, < 15"
-  - dependency-name: "@types/node"
-    versions:
-    - 15.0.0
-  - dependency-name: cypress
-    versions:
-    - 7.0.0
-    - 7.0.1
-    - 7.1.0
-  - dependency-name: husky
-    versions:
-    - 5.0.9
-    - 5.1.0
-    - 5.1.1
-    - 5.1.2
-    - 5.1.3
-    - 5.2.0
