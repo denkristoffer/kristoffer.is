@@ -42,7 +42,7 @@
     "@types/node": "12.20.10",
     "@types/react": "17.0.4",
     "cypress": "6.8.0",
-    "eslint": "7.25.0",
+    "eslint": "7.26.0",
     "jest": "26.6.3"
   },
   "license": "(MIT OR CC-BY-SA-4.0)"
