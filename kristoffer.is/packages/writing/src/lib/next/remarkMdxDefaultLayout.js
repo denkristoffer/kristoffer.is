@@ -1,5 +1,5 @@
-const u = require("unist-builder");
 const { basename, dirname, extname, join, relative } = require("path");
+import { u } from "unist-builder";
 
 const remarkMdxDefaultLayout = (options = []) => (tree, file) => {
   const layouts = Array.isArray(options) ? options : [options];
