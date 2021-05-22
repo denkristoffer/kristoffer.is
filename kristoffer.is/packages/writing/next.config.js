@@ -29,6 +29,10 @@ const withMDX = require("@next/mdx")({
 
 module.exports = withMDX({
   assetPrefix: isProduction ? "/writing" : "",
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en"],
+  },
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 
   webpack: (config, { isServer }) => {
