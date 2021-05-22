@@ -1,24 +1,17 @@
 const { existsSync, mkdirSync, writeFileSync } = require("fs");
-const globby = require("globby");
 const prettier = require("prettier");
 
+const { getPageFiles, getPathFromPage, getRouteFromPath } = require("./utils");
+
 (async () => {
-  // Ignore Next.js specific files (e.g., _app.js) and API routes.
-  const pages = await globby([
-    "src/pages/**/*{.mdx,.tsx}",
-    "!src/pages/_*.tsx",
-    "!src/pages/api",
-  ]);
+  const pages = await getPageFiles();
   const sitemap = `
     <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         ${pages
           .map((page) => {
-            const path = page
-              .replace("src/pages", "")
-              .replace(".mdx", "")
-              .replace(".tsx", "");
-            const route = path.replace("/index", "");
+            const path = getPathFromPage(page);
+            const route = getRouteFromPath(path);
 
             return `
               <url>
