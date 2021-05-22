@@ -1,15 +1,17 @@
 import React from "react";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
-import { UrlObject } from "url";
 
 import { A } from "../components/text";
 
+type NextHref = NextLinkProps["href"];
+type UrlObject = Exclude<NextHref, string>;
+
 type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-  href: NextLinkProps["href"];
+  href: NextHref;
 };
 
-const isUrlObject = (toTest: NextLinkProps["href"]): toTest is UrlObject => {
-  return (toTest as UrlObject).path !== undefined;
+const isUrlObject = (toTest: NextHref): toTest is UrlObject => {
+  return (toTest as UrlObject).pathname !== undefined;
 };
 
 export default function Link({

@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v1.4.4
         with:
-          node-version: 12.x
+          node-version: 14.x
 
       - name: Install
         run: yarn
