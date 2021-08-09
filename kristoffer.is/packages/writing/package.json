@@ -22,7 +22,7 @@
     "@next/mdx": "10.2.2",
     "dayjs": "1.10.6",
     "globby": "11.0.3",
-    "next": "10.2.2",
+    "next": "11.0.1",
     "polished": "4.1.2",
     "prettier": "2.3.0",
     "react": "17.0.2",
@@ -43,6 +43,7 @@
     "@types/react": "17.0.6",
     "cypress": "6.8.0",
     "eslint": "7.27.0",
+    "eslint-config-next": "^11.0.1",
     "jest": "26.6.3"
   },
   "license": "(MIT OR CC-BY-SA-4.0)"
