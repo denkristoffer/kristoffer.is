@@ -14,7 +14,7 @@
   "dependencies": {
     "@emotion/babel-preset-css-prop": "11.2.0",
     "@emotion/css": "11.5.0",
-    "@emotion/react": "11.7.0",
+    "@emotion/react": "11.7.1",
     "@emotion/server": "11.4.0",
     "@emotion/styled": "11.6.0",
     "@mdx-js/loader": "1.6.22",
