@@ -3,9 +3,9 @@ name: CI
 on:
   push:
     branches: ["main"]
-    paths: "/**"
+    paths: "./**"
   pull_request:
-    paths: "/**"
+    paths: "./**"
 
 jobs:
   ci:
