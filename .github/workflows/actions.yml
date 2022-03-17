@@ -2,17 +2,17 @@ name: CI
 
 on:
   push:
-    branches: ["master"]
-    paths: "kristoffer.is/**"
+    branches: ["main"]
+    paths: "/**"
   pull_request:
-    paths: "kristoffer.is/**"
+    paths: "/**"
 
 jobs:
   ci:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: kristoffer.is
+        working-directory: .
 
     steps:
       - uses: actions/checkout@v2
