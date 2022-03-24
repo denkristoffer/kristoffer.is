@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@denkristoffer/eslint-config": "8.1.0",
-    "@types/react": "17.0.41",
+    "@types/react": "17.0.42",
     "eslint": "7.32.0",
     "eslint-config-next": "^12.1.0",
     "prettier": "2.6.0"
