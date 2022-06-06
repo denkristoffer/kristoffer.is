@@ -1,10 +1,7 @@
 import React from "react";
 import { AppProps } from "next/app";
-import { CacheProvider, css, Global, ThemeProvider } from "@emotion/react";
-import { cache } from "@emotion/css";
+import { css, Global, ThemeProvider } from "@emotion/react";
 import { MDXProvider } from "@mdx-js/react";
-// https://github.com/emotion-js/emotion/blob/ad1a84d513ac627b7121d77b0a18fef95bf05571/docs/typescript.mdx#css-prop
-import type {} from "@emotion/react/types/css-prop";
 
 import { theme } from "../lib/theme";
 import Link from "../components/link";
@@ -43,35 +40,33 @@ export default function App({
   pageProps,
 }: AppProps): React.ReactElement {
   return (
-    <CacheProvider value={cache}>
-      <ThemeProvider theme={theme}>
-        <MDXProvider components={mdxComponents}>
-          <Global
-            styles={(theme) => css`
-              * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-              }
+    <ThemeProvider theme={theme}>
+      <MDXProvider components={mdxComponents}>
+        <Global
+          styles={(theme) => css`
+            * {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+            }
 
+            body {
+              background: ${theme.colors.background};
+              color: ${theme.colors.color};
+              font-family: ${theme.typography.fontFamily};
+            }
+
+            @media (prefers-color-scheme: dark) {
               body {
-                background: ${theme.colors.background};
-                color: ${theme.colors.color};
-                font-family: ${theme.typography.fontFamily};
+                background: ${theme.dark.background};
+                color: ${theme.dark.color};
               }
+            }
+          `}
+        />
 
-              @media (prefers-color-scheme: dark) {
-                body {
-                  background: ${theme.dark.background};
-                  color: ${theme.dark.color};
-                }
-              }
-            `}
-          />
-
-          <Component {...pageProps} />
-        </MDXProvider>
-      </ThemeProvider>
-    </CacheProvider>
+        <Component {...pageProps} />
+      </MDXProvider>
+    </ThemeProvider>
   );
 }
