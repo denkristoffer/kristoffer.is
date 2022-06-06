@@ -1,4 +1,4 @@
-import { readdirSync } from "fs";
+import { readdirSync } from "node:fs";
 
 import { postsDirectory } from "./next";
 
@@ -32,7 +32,7 @@ const getPostByFilename = async (
   const items = {};
 
   // Ensure only the minimal needed data is exposed
-  fields.forEach((field) => {
+  for (const field of fields) {
     if (field === "slug") {
       items["slug"] = slug;
     }
@@ -40,7 +40,7 @@ const getPostByFilename = async (
     if (metadata[field]) {
       items[field] = metadata[field];
     }
-  });
+  }
 
   return items;
 };

@@ -43,6 +43,7 @@ describe("parseNumber", () => {
   });
 
   // @todo
+  // eslint-disable-next-line jest/no-commented-out-tests
   // it.skip("works with decimals", () => {
   //   const string = "9.391.573,30 kr.";
   //   const digits = parseNumber(string);
@@ -59,7 +60,7 @@ describe("formatNumberToCurrencyWithFormatter", () => {
         minimumFractionDigits: 0,
         style: "currency",
       });
-      const number = 123456;
+      const number = 123_456;
       const currency = formatNumberToCurrencyWithFormatter(formatter, number);
 
       expect(currency).toBe("£123,456");
