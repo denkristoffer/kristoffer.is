@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import styled from "@emotion/styled";
 import { rgba } from "polished";
 
