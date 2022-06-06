@@ -34,7 +34,7 @@ export default function Note({
     <StyledAside>
       {title ? <Title>{title}</Title> : null}
 
-      <Text>{children}</Text>
+      {typeof children === "string" ? <Text>{children}</Text> : children}
     </StyledAside>
   );
 }
