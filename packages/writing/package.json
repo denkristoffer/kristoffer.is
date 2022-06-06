@@ -2,7 +2,7 @@
   "name": "@kristoffer.is/writing",
   "version": "3.0.0",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "scripts": {
     "dev": "next",
@@ -38,7 +38,7 @@
     "@denkristoffer/eslint-config": "8.1.0",
     "@emotion/eslint-plugin": "11.7.0",
     "@types/jest": "27.4.1",
-    "@types/node": "16.11.26",
+    "@types/node": "16.11.38",
     "@types/react": "17.0.43",
     "cypress": "9.5.3",
     "eslint": "7.32.0",
