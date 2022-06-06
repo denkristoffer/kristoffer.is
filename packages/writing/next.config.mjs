@@ -1,15 +1,17 @@
-const rehypeSlug = require("rehype-slug");
-const rehypeShiki = require("rehype-shiki");
-const { rehypeAccessibleEmojis } = require("rehype-accessible-emojis");
+import rehypeSlug from "rehype-slug";
+import rehypeShiki from "rehype-shiki";
+import { rehypeAccessibleEmojis } from "rehype-accessible-emojis";
+import mdx from "@next/mdx";
 
-const { postsDirectory } = require("./src/lib/next");
-const defaultLayout = require("./src/lib/next/remarkMdxDefaultLayout");
+import { postsDirectory } from "./src/lib/next/index.mjs";
+import defaultLayout from "./src/lib/next/remarkMdxDefaultLayout.mjs";
 
 const isProduction = process.env.NODE_ENV === "production";
 
-const withMDX = require("@next/mdx")({
+const withMDX = mdx({
   extension: /\.mdx?$/,
   options: {
+    providerImportSource: "@mdx-js/react",
     rehypePlugins: [
       rehypeAccessibleEmojis,
       rehypeSlug,
@@ -27,15 +29,22 @@ const withMDX = require("@next/mdx")({
   },
 });
 
-module.exports = withMDX({
+/**
+ * @type {import('next').NextConfig}
+ */
+export default withMDX({
   assetPrefix: isProduction ? "/writing" : "",
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
+
+  experimental: {
+    esmExternals: true,
+  },
 
   webpack: (config, { isServer }) => {
     // Generate sitemap on build time
     if (isServer) {
       console.log("Generating sitemap");
-      require("./scripts/generateSitemap");
+      import("./scripts/generateSitemap.mjs");
     }
 
     return config;
