@@ -36,12 +36,12 @@
     "unist-builder": "2.0.3"
   },
   "devDependencies": {
-    "@denkristoffer/eslint-config": "8.1.0",
+    "@denkristoffer/eslint-config": "9.0.0",
     "@emotion/eslint-plugin": "11.7.0",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.38",
     "cypress": "9.5.3",
-    "eslint": "7.32.0",
+    "eslint": "8.17.0",
     "eslint-config-next": "^12.1.4",
     "jest": "27.5.1"
   },
