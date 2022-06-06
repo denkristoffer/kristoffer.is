@@ -1,6 +1,6 @@
 import { readdirSync } from "node:fs";
 
-import { postsDirectory } from "./next";
+import { postsDirectory } from "./next/index.mjs";
 
 interface Post {
   [key: string]: unknown;

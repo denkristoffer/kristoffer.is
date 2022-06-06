@@ -1,6 +1,6 @@
-const { existsSync, mkdirSync, writeFileSync } = require("fs");
-const globby = require("globby");
-const prettier = require("prettier");
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
+import globby from "globby";
+import prettier from "prettier";
 
 (async () => {
   // Ignore Next.js specific files (e.g., _app.js) and API routes.
