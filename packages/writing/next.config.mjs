@@ -36,6 +36,10 @@ export default withMDX({
   assetPrefix: isProduction ? "/writing" : "",
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 
+  compiler: {
+    emotion: true,
+  },
+
   experimental: {
     esmExternals: true,
   },
