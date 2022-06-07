@@ -4,7 +4,8 @@ import { rehypeAccessibleEmojis } from "rehype-accessible-emojis";
 import mdx from "@next/mdx";
 
 import { postsDirectory } from "./src/lib/next/index.mjs";
-import defaultLayout from "./src/lib/next/remarkMdxDefaultLayout.mjs";
+import { remarkMdxDefaultLayout as defaultLayout } from "./src/lib/next/remarkMdxDefaultLayout.mjs";
+import { recmaNextjsStaticProps } from "./src/lib/next/recma-nextjs-static-props.mjs";
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -17,6 +18,7 @@ const withMDX = mdx({
       rehypeSlug,
       [rehypeShiki, { theme: "Material-Theme-Palenight" }],
     ],
+    recmaPlugins: [recmaNextjsStaticProps],
     remarkPlugins: [
       [
         defaultLayout,
