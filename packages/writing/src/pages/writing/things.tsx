@@ -75,11 +75,7 @@ export default function Archive({ posts }: ArchiveProps): React.ReactElement {
                     </ArchiveH1>
                   </header>
 
-                  {post.excerpt ? (
-                    <Fragment>
-                      <Text>{post.excerpt}</Text>
-                    </Fragment>
-                  ) : null}
+                  {post.excerpt && <Text>{post.excerpt}</Text>}
 
                   <Text>
                     <Link href={`/writing/${post.slug}`}>Read article</Link>
