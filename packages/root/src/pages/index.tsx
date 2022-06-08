@@ -21,20 +21,6 @@ export default function Index(): React.ReactElement {
 
       <ul>
         <li>
-          <a href="https://github.com/denkristoffer">&hellip;coding</a>
-        </li>
-        <li>
-          <a href="https://www.goodreads.com/user/show/3311252-kristoffer">
-            &hellip;reading
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/denkristoffer">&hellip;tweeting</a>
-        </li>
-        <li>
-          <a href="https://letterboxd.com/denkristoffer/">&hellip;watching</a>
-        </li>
-        <li>
           <a href="/writing">&hellip;writing</a>
         </li>
       </ul>
