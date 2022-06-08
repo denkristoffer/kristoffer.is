@@ -3,10 +3,10 @@ import rehypeShiki from "rehype-shiki";
 import { rehypeAccessibleEmojis } from "rehype-accessible-emojis";
 import mdx from "@next/mdx";
 import remarkGfm from "remark-gfm";
+import recmaNextjsStaticProps from "recma-nextjs-static-props";
 
 import { postsDirectory } from "./src/lib/next/index.mjs";
 import { remarkMdxDefaultLayout as defaultLayout } from "./src/lib/next/remarkMdxDefaultLayout.mjs";
-import { recmaNextjsStaticProps } from "./src/lib/next/recma-nextjs-static-props.mjs";
 
 const isProduction = process.env.NODE_ENV === "production";
 

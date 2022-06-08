@@ -5184,7 +5184,7 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-periscopic@3.0.4, periscopic@^3.0.0:
+periscopic@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/periscopic/-/periscopic-3.0.4.tgz#b3fbed0d1bc844976b977173ca2cd4a0ef4fa8d1"
   integrity sha512-SFx68DxCv0Iyo6APZuw/AKewkkThGwssmU0QWtTlvov3VAtPX+QJ4CadwSaz8nrT5jPIuxdvJWB4PnD2KNDxQg==
@@ -5409,6 +5409,15 @@ readable-stream@~1.0.17, readable-stream@~1.0.27-1:
     inherits "~2.0.1"
     isarray "0.0.1"
     string_decoder "~0.10.x"
+
+recma-nextjs-static-props@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/recma-nextjs-static-props/-/recma-nextjs-static-props-1.0.0.tgz#99c1f0782adf0f5c43e78a2a8991c8e0f42031d8"
+  integrity sha512-szo+rOZFU6mR0YWZi3e3dSqcEQU+E0f7GIyfMfntHeJccH1s9ODP0HWUeK7No0lcY1smRCcC43JrpoekzuX4Aw==
+  dependencies:
+    "@types/estree" "*"
+    periscopic "^3.0.0"
+    unified "^10.0.0"
 
 regenerator-runtime@^0.13.4:
   version "0.13.5"
