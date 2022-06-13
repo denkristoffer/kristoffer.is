@@ -22,7 +22,7 @@
     "@types/react": "18.0.12",
     "dayjs": "1.11.3",
     "esast-util-from-js": "^1.0.0",
-    "globby": "13.1.1",
+    "globby": "13.1.2",
     "next": "12.1.6",
     "polished": "4.2.2",
     "prettier": "2.6.2",
