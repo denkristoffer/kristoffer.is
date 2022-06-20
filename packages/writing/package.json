@@ -40,13 +40,13 @@
   "devDependencies": {
     "@denkristoffer/eslint-config": "9.0.0",
     "@emotion/eslint-plugin": "11.7.0",
-    "@types/jest": "27.4.1",
+    "@types/jest": "28.1.2",
     "@types/mdast": "3.0.10",
     "@types/node": "16.11.39",
     "cypress": "10.0.3",
     "eslint": "8.17.0",
     "eslint-config-next": "^12.1.6",
-    "jest": "27.5.1"
+    "jest": "28.1.1"
   },
   "license": "(MIT OR CC-BY-SA-4.0)"
 }
