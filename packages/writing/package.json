@@ -42,7 +42,7 @@
     "@emotion/eslint-plugin": "11.7.0",
     "@types/jest": "27.4.1",
     "@types/mdast": "3.0.10",
-    "@types/node": "16.11.39",
+    "@types/node": "18.0.3",
     "cypress": "10.0.3",
     "eslint": "8.17.0",
     "eslint-config-next": "^12.1.6",
