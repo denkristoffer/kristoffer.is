@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@denkristoffer/eslint-config": "9.0.0",
-    "@emotion/eslint-plugin": "11.7.0",
+    "@emotion/eslint-plugin": "11.10.0",
     "@types/jest": "27.4.1",
     "@types/mdast": "3.0.10",
     "@types/node": "16.11.39",
