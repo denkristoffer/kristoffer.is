@@ -56,6 +56,11 @@ export default function Index(): React.ReactElement {
 
         <Ul>
           <li>
+            <Link href="/writing/single-purpose-websites">
+              Single-purpose websites
+            </Link>
+          </li>
+          <li>
             <Link href="/writing/what-i-learned-from-working-at-my-first-startup">
               What I learned from working at my first startup
             </Link>
