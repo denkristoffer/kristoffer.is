@@ -972,6 +972,13 @@
   dependencies:
     "@types/estree" "*"
 
+"@types/estree-jsx@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/estree-jsx/-/estree-jsx-1.0.0.tgz#7bfc979ab9f692b492017df42520f7f765e98df1"
+  integrity sha512-3qvGd0z8F2ENTGr/GG1yViqfiKmRfrXVx5sJyHGFu3z7m5g5utCQtGp/g29JnjflhtQJBv1WDQukHiT58xPcYQ==
+  dependencies:
+    "@types/estree" "*"
+
 "@types/estree@*", "@types/estree@^0.0.51":
   version "0.0.51"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.51.tgz#cfd70924a25a3fd32b218e5e420e6897e1ac4f40"
@@ -1285,12 +1292,7 @@ acorn@^7.1.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.0.tgz#e1ad486e6c54501634c6c397c5c121daa383607c"
   integrity sha512-+G7P8jJmCHr+S+cLfQxygbWhXy+8YTVGzAkpEbcLo2mLoL7tij/VG41QSHACSf5QgYRhMZYHuNc6drJaO0Da+w==
 
-acorn@^8.0.0, acorn@^8.2.4:
-  version "8.7.1"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.7.1.tgz#0197122c843d1bf6d0a5e83220a788f278f63c30"
-  integrity sha512-Xx54uLJQZ19lKygFXOWsscKUbsBZW0CPykPhVQdhIeIwrbPmJzqeASDInc8nKBnp/JT6igTs82qPXz069H8I/A==
-
-acorn@^8.8.0:
+acorn@^8.0.0, acorn@^8.2.4, acorn@^8.8.0:
   version "8.8.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.0.tgz#88c0187620435c7f6015803f5539dae05a9dbea8"
   integrity sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==
@@ -2305,12 +2307,12 @@ esast-util-from-estree@^1.0.0:
     estree-util-visit "^1.0.0"
     unist-util-position-from-estree "^1.0.0"
 
-esast-util-from-js@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/esast-util-from-js/-/esast-util-from-js-1.0.0.tgz#3ceb25419d861128799c8c848c346c20bbf4f8ab"
-  integrity sha512-jqK8mokE7Gvij+UDeRpU8P+Rgris7B9lkHyez7uqAG5ID/h0joG9ps9DCHKOZzKCHooQdGYIClTCgmlPk6P35Q==
+esast-util-from-js@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/esast-util-from-js/-/esast-util-from-js-1.1.0.tgz#a2fc7057847c0f632b15d0dbc64444514e9d3a0e"
+  integrity sha512-XaW9Y5Ag4ceNg6kkwNFhRexnkNgtINnBbHdXC5LRv7g021xLj5LX7AGB6qLafvrEcVeVl+iUV0i6SssTOoOoBA==
   dependencies:
-    "@types/estree-jsx" "^0.0.1"
+    "@types/estree-jsx" "^1.0.0"
     acorn "^8.0.0"
     esast-util-from-estree "^1.0.0"
     vfile-message "^3.0.0"
