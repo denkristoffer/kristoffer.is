@@ -48,6 +48,8 @@ export default withMDX({
     esmExternals: true,
   },
 
+  reactStrictMode: true,
+
   webpack: (config, { isServer }) => {
     // Generate sitemap on build time
     if (isServer) {
@@ -57,6 +59,4 @@ export default withMDX({
 
     return config;
   },
-
-  target: "serverless",
 });
