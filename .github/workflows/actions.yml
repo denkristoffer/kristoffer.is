@@ -25,6 +25,9 @@ jobs:
       - name: Lint
         run: yarn workspaces run lint
 
+      # - name: Test
+      #   run: yarn workspaces run test
+
       - name: Typecheck
         run: yarn workspaces run typecheck
 
