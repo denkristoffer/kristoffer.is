@@ -9,7 +9,7 @@ interface DocumentProps {
 }
 
 export default class DocumentWithLang extends Document<DocumentProps> {
-  render(): JSX.Element {
+  render() {
     return (
       <Html lang="en">
         <Head>

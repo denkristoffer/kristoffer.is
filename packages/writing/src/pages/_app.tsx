@@ -35,10 +35,7 @@ const mdxComponents = {
   ul: Ul,
 };
 
-export default function App({
-  Component,
-  pageProps,
-}: AppProps): React.ReactElement {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <MDXProvider components={mdxComponents}>

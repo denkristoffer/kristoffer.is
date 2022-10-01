@@ -9,7 +9,7 @@ import { H3, Text, Ul } from "../../components/text";
 
 const Heading = H3.withComponent("h2");
 
-export default function Index(): React.ReactElement {
+export default function Index() {
   return (
     <Fragment>
       <Head>

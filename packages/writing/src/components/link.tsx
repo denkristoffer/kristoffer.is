@@ -14,10 +14,7 @@ const isUrlObject = (toTest: NextHref): toTest is UrlObject => {
   return (toTest as UrlObject).pathname !== undefined;
 };
 
-export default function Link({
-  href,
-  ...props
-}: LinkProps): React.ReactElement {
+export default function Link({ href, ...props }: LinkProps) {
   if (isUrlObject(href) || href.startsWith("/") || href.startsWith("#")) {
     return (
       <NextLink href={href} passHref>

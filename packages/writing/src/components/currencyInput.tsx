@@ -43,7 +43,7 @@ export default function CurrencyInput({
   prefix = "",
   suffix = "",
   ...props
-}: CurrencyInputProps): React.ReactElement {
+}: CurrencyInputProps) {
   const format = useCallback(
     (value: string) => {
       if (value !== "") {

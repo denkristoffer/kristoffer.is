@@ -6,7 +6,7 @@ export const config = {
   unstable_runtimeJS: false,
 };
 
-export default function Index(): React.ReactElement {
+export default function Index() {
   return (
     <>
       <Head>

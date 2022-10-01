@@ -52,7 +52,7 @@ export interface PensionCalculatorProps {
 export default function PensionCalculator({
   pensionLimit,
   topskatLimit,
-}: PensionCalculatorProps): React.ReactElement {
+}: PensionCalculatorProps) {
   const monthlyPensionPayment = useCallback(
     (wage: number) =>
       pensionPaymentFromWageAndLimits({ pensionLimit, topskatLimit }, wage) /

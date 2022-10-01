@@ -4,10 +4,7 @@ export interface AsideProps {
   children: React.ReactNode;
 }
 
-export default function Aside({
-  children,
-  ...props
-}: AsideProps): React.ReactElement {
+export default function Aside({ children, ...props }: AsideProps) {
   return (
     <aside
       {...props}

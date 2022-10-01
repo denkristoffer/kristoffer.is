@@ -18,10 +18,7 @@ interface PostLayoutProps {
   metadata: Metadata;
 }
 
-export default function PostLayout({
-  children,
-  metadata,
-}: PostLayoutProps): React.ReactElement {
+export default function PostLayout({ children, metadata }: PostLayoutProps) {
   const date = dayjs(metadata.date);
   const { pathname } = useRouter();
   const slug = pathname.replace("/writing/", "");

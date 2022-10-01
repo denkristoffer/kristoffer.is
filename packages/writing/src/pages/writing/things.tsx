@@ -19,7 +19,7 @@ interface ArchiveProps {
   posts: ArchivePost[];
 }
 
-export default function Archive({ posts }: ArchiveProps): React.ReactElement {
+export default function Archive({ posts }: ArchiveProps) {
   return (
     <Fragment>
       <Head>

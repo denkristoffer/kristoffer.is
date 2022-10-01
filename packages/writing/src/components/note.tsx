@@ -26,10 +26,7 @@ interface NoteProps {
   title?: string;
 }
 
-export default function Note({
-  children,
-  title,
-}: NoteProps): React.ReactElement {
+export default function Note({ children, title }: NoteProps) {
   return (
     <StyledAside>
       {title ? <Title>{title}</Title> : null}

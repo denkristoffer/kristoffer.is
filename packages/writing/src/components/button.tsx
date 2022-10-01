@@ -6,11 +6,7 @@ interface ButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   value?: string;
 }
 
-export default function Button({
-  children,
-  value,
-  ...props
-}: ButtonProps): React.ReactElement {
+export default function Button({ children, value, ...props }: ButtonProps) {
   return (
     <a
       {...props}
