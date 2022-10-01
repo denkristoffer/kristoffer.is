@@ -25,12 +25,11 @@ export default function PostLayout({
   const date = dayjs(metadata.date);
   const { pathname } = useRouter();
   const slug = pathname.replace("/writing/", "");
-  const title = `${metadata.title} — kristoffer.is/writing`;
 
   return (
     <Fragment>
       <Head>
-        <title>{title}</title>
+        <title>{`${metadata.title} — kristoffer.is/writing`}</title>
         <meta name="description" content={metadata.excerpt} />
       </Head>
 
