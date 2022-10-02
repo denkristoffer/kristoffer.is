@@ -20,16 +20,16 @@ jobs:
           node-version: 16.x
 
       - name: Install
-        run: yarn
+        run: npm ci
 
       - name: Lint
-        run: yarn workspaces run lint
+        run: npm run-script lint --workspaces --if-present
 
       # - name: Test
-      #   run: yarn workspaces run test
+      #   run: npm run-script test --workspaces --if-present
 
       - name: Typecheck
-        run: yarn workspaces run typecheck
+        run: npm run-script typecheck --workspaces --if-present
 
       - name: Build
-        run: yarn workspaces run build
+        run: npm run-script build --workspaces --if-present
