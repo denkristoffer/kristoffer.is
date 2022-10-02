@@ -37,7 +37,7 @@ const withMDX = mdx({
  * @type {import('next').NextConfig}
  */
 export default withMDX({
-  assetPrefix: isProduction ? "/writing" : "",
+  assetPrefix: isProduction ? "/writing" : undefined,
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 
   compiler: {
