@@ -8,6 +8,7 @@
     "dev": "next",
     "build": "next build",
     "lint": "eslint .",
+    "postbuild": "node ./scripts/generateSitemap.mjs",
     "test": "jest",
     "typecheck": "tsc --noEmit"
   },
