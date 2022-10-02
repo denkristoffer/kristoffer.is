@@ -49,14 +49,4 @@ export default withMDX({
   },
 
   reactStrictMode: true,
-
-  webpack: (config, { isServer }) => {
-    // Generate sitemap on build time
-    if (isServer) {
-      console.log("Generating sitemap");
-      import("./scripts/generateSitemap.mjs");
-    }
-
-    return config;
-  },
 });
