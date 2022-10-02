@@ -4,4 +4,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   root: true,
+  rules: {
+    "react/no-unknown-property": ["error", { ignore: ["global", "jsx"] }],
+  },
 };
