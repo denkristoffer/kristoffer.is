@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import dayjs from "dayjs";
 
 import { H1 } from "../components/text";
+import Link from "../components/link";
 
 export interface Metadata {
   date: string;
@@ -93,7 +94,10 @@ export default function PostLayout({ children, metadata }: PostLayoutProps) {
           padding: 0 20px 50px;
         `}
       >
-        &copy; Kristoffer Sachse
+        &copy; Kristoffer Sachse —{" "}
+        <Link href="/writing/things">
+          List of everything I&rsquo;ve written
+        </Link>
         {typeof window !== "undefined" &&
         window.location.host === "kristoffer.is" ? (
           <img
