@@ -41,7 +41,7 @@
   "devDependencies": {
     "@denkristoffer/eslint-config": "9.0.0",
     "@emotion/eslint-plugin": "11.10.0",
-    "@types/jest": "29.1.1",
+    "@types/jest": "29.1.2",
     "@types/mdast": "3.0.10",
     "@types/node": "16.11.65",
     "cypress": "10.9.0",
