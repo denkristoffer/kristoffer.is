@@ -26,10 +26,17 @@ const getPostByFilename = async (
   const { metadata } = (await import(
     `../pages/writing/${filename}`
   )) as FileContent;
-  // const fullPath = join(postsDirectory, file);
 
   const slug = filename.replace(/\.mdx?$/, "");
   const items = {};
+
+  // Throw a useful error when required metadata is missing
+  const requiredFields = ["date", "excerpt", "title"];
+  for (const field of requiredFields) {
+    if (!Object.keys(metadata).includes(field)) {
+      throw new Error(`${filename} is missing metadata: ${field}`);
+    }
+  }
 
   // Ensure only the minimal needed data is exposed
   for (const field of fields) {
