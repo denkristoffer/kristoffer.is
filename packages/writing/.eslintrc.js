@@ -8,6 +8,7 @@ module.exports = {
   rules: {
     "@emotion/jsx-import": "off",
     "@emotion/syntax-preference": ["error", "string"],
+    "jest/no-commented-out-tests": "off",
     "react/no-unknown-property": ["error", { ignore: ["css"] }],
     "react/react-in-jsx-scope": "off",
   },

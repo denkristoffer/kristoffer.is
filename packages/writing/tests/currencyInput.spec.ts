@@ -1,32 +1,34 @@
+import { expect, test } from "@playwright/test";
+
 import {
   formatNumberToCurrencyWithFormatter,
   isNumber,
   parseNumber,
-} from "../components/currencyInput";
+} from "../src/components/currencyInput";
 
-describe("isNumber", () => {
-  it("returns true when given an integer", () => {
+test.describe("isNumber", () => {
+  test("returns true when given an integer", () => {
     const number = 1234;
     const returnValue = isNumber(number);
 
     expect(returnValue).toBe(true);
   });
 
-  it("returns true when given a float", () => {
+  test("returns true when given a float", () => {
     const number = 12.34;
     const returnValue = isNumber(number);
 
     expect(returnValue).toBe(true);
   });
 
-  it("returns true when given a negative number", () => {
+  test("returns true when given a negative number", () => {
     const number = -12.34;
     const returnValue = isNumber(number);
 
     expect(returnValue).toBe(true);
   });
 
-  it("returns false when given a string number", () => {
+  test("returns false when given a string number", () => {
     const number = "1234";
     const returnValue = isNumber(number);
 
@@ -34,8 +36,8 @@ describe("isNumber", () => {
   });
 });
 
-describe("parseNumber", () => {
-  it("returns a string with only digits", () => {
+test.describe("parseNumber", () => {
+  test("returns a string with only digits", () => {
     const string = "9.391.573 kr.";
     const digits = parseNumber(string);
 
@@ -43,8 +45,7 @@ describe("parseNumber", () => {
   });
 
   // @todo
-  // eslint-disable-next-line jest/no-commented-out-tests
-  // it.skip("works with decimals", () => {
+  // test("works with decimals", () => {
   //   const string = "9.391.573,30 kr.";
   //   const digits = parseNumber(string);
 
@@ -52,9 +53,9 @@ describe("parseNumber", () => {
   // });
 });
 
-describe("formatNumberToCurrencyWithFormatter", () => {
-  describe("given a 'en' formatter with GBP", () => {
-    it("formats the number", () => {
+test.describe("formatNumberToCurrencyWithFormatter", () => {
+  test.describe("given a 'en' formatter with GBP", () => {
+    test("formats the number", () => {
       const formatter = new Intl.NumberFormat("en", {
         currency: "GBP",
         minimumFractionDigits: 0,
