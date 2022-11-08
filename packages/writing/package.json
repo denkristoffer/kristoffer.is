@@ -43,7 +43,7 @@
     "@emotion/eslint-plugin": "11.10.0",
     "@playwright/test": "^1.27.1",
     "@types/mdast": "3.0.10",
-    "@types/node": "16.11.68",
+    "@types/node": "16.18.3",
     "eslint": "8.25.0",
     "eslint-config-next": "^12.1.6"
   },
