@@ -41,7 +41,7 @@
   "devDependencies": {
     "@denkristoffer/eslint-config": "9.0.0",
     "@emotion/eslint-plugin": "11.10.0",
-    "@playwright/test": "^1.27.1",
+    "@playwright/test": "^1.28.0",
     "@types/mdast": "3.0.10",
     "@types/node": "16.18.3",
     "eslint": "8.27.0",
