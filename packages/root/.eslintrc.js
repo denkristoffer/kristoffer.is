@@ -1,5 +1,5 @@
 module.exports = {
-  extends: "@denkristoffer/eslint-config",
+  extends: ["@denkristoffer/eslint-config", "plugin:@next/next/recommended"],
   parserOptions: {
     tsconfigRootDir: __dirname,
   },
