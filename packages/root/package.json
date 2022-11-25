@@ -2,7 +2,7 @@
   "name": "@kristoffer.is/root",
   "version": "2.0.0",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "scripts": {
     "dev": "next",
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@denkristoffer/eslint-config": "9.0.0",
-    "@types/node": "16.18.3",
+    "@types/node": "18.11.9",
     "eslint": "8.28.0",
     "eslint-config-next": "^12.1.6",
     "prettier": "2.8.0"
