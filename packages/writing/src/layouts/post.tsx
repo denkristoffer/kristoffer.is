@@ -101,13 +101,20 @@ export default function PostLayout({ children, metadata }: PostLayoutProps) {
         </Link>
         {typeof window !== "undefined" &&
         window.location.host === "kristoffer.is" ? (
-          <Image
-            alt=""
-            height={0}
-            src={`https://kristoffer.goatcounter.com/count?p=/${slug}`}
-            width={0}
-            unoptimized
-          />
+          <div
+            css={css`
+              height: 0;
+              width: 0;
+            `}
+          >
+            <Image
+              alt=""
+              height={0}
+              src={`https://kristoffer.goatcounter.com/count?p=/${slug}`}
+              width={0}
+              unoptimized
+            />
+          </div>
         ) : null}
       </footer>
     </Fragment>
