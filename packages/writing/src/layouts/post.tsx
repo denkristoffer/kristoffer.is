@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import dayjs from "dayjs";
+import Image from "next/image";
 
 import { H1 } from "../components/text";
 import Link from "../components/link";
@@ -100,9 +101,11 @@ export default function PostLayout({ children, metadata }: PostLayoutProps) {
         </Link>
         {typeof window !== "undefined" &&
         window.location.host === "kristoffer.is" ? (
-          <img
+          <Image
             alt=""
+            height={0}
             src={`https://kristoffer.goatcounter.com/count?p=/${slug}`}
+            width={0}
           />
         ) : null}
       </footer>

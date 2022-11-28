@@ -1,5 +1,5 @@
 module.exports = {
-  extends: "@denkristoffer/eslint-config",
+  extends: ["@denkristoffer/eslint-config", "next/core-web-vitals"],
   parserOptions: {
     tsconfigRootDir: __dirname,
   },
