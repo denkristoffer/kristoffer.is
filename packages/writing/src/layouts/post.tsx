@@ -106,6 +106,7 @@ export default function PostLayout({ children, metadata }: PostLayoutProps) {
             height={0}
             src={`https://kristoffer.goatcounter.com/count?p=/${slug}`}
             width={0}
+            unoptimized
           />
         ) : null}
       </footer>
