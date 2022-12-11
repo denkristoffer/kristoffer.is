@@ -21,7 +21,7 @@
     "@mdx-js/react": "2.1.5",
     "@next/mdx": "12.3.1",
     "@types/react": "18.0.25",
-    "dayjs": "1.11.6",
+    "dayjs": "1.11.7",
     "esast-util-from-js": "1.1.0",
     "globby": "13.1.2",
     "next": "12.3.1",
