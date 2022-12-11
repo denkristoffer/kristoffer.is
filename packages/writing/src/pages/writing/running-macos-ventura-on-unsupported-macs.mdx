@@ -1,0 +1,25 @@
+export const metadata = {
+  date: "2022-12-11T11:54:18.000Z",
+  excerpt:
+    "With macOS Ventura (version 13) Apple stopped supporting a large number of older Macs including my MacBook Pro from 2016. I think you can reasonably argue that Apple should support its pro line of computers for more than five years, but that’s a topic for another time. I’m simply not interested in replacing this machine yet, so to lengthen its lifespan, software-wise, I decided to investigate how to get Ventura running on unsupported Macs.",
+  tags: ["macos"],
+  title: "Running macOS Ventura on unsupported Macs",
+};
+
+With macOS Ventura (version 13) Apple stopped supporting a large number of older Macs including my MacBook Pro from 2016. I think you can reasonably argue that Apple should support its pro line of computers for more than five years, but that’s a topic for another time. I’m simply not interested in replacing this machine yet, so to lengthen its lifespan, software-wise, I decided to investigate how to get Ventura running on unsupported Macs.
+
+It turned out to be easy since someone else had already done the hard work: [OpenCore Legacy Patcher](https://dortania.github.io/OpenCore-Legacy-Patcher/) is an great tool that can patch your machine and unlock macOS features and versions that are not officially supported. As stated in the documentation[^1]:
+
+> OpenCore is a sophisticated boot loader used to inject and patch data in memory, instead of on disk. This means that we're able to achieve a near-native experience on many unsupported Macs.
+
+It’s on Homebrew, so getting started can be as easy as the following command in your terminal:
+
+```sh
+brew install opencore-patcher
+```
+
+[The documentation](https://dortania.github.io/OpenCore-Legacy-Patcher/INSTALLER.html#creating-the-installer) walks you through the rest of the process.
+
+As always with projects like these it should be mentioned that patching your Mac like this is unsupported and you do it at your own risk. Things can go wrong and you might end up with a bricked device you cannot save.
+
+[^1]: [What is OpenCore?](https://dortania.github.io/OpenCore-Legacy-Patcher/START.html#what-is-opencore)
