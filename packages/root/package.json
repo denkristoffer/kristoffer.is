@@ -21,7 +21,7 @@
     "@denkristoffer/eslint-config": "9.0.0",
     "@types/node": "18.11.9",
     "eslint": "8.29.0",
-    "eslint-config-next": "12.3.4",
+    "eslint-config-next": "13.0.6",
     "prettier": "2.8.1"
   },
   "license": "MIT"
