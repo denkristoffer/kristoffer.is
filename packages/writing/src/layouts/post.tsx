@@ -110,7 +110,7 @@ export default function PostLayout({ children, metadata }: PostLayoutProps) {
             <Image
               alt=""
               height={0}
-              src={`https://kristoffer.goatcounter.com/count?p=/${slug}`}
+              src={`https://kristoffer.goatcounter.com/count?p=/writing/${slug}`}
               width={0}
               unoptimized
             />
