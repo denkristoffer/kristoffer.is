@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { css } from "@emotion/react";
 import { darken } from "polished";
 
@@ -6,7 +7,10 @@ interface ButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   value?: string;
 }
 
-export default function Button({ children, value, ...props }: ButtonProps) {
+export default forwardRef<HTMLAnchorElement, ButtonProps>(function Button(
+  { children, value, ...props },
+  ref,
+) {
   return (
     <a
       {...props}
@@ -48,8 +52,9 @@ export default function Button({ children, value, ...props }: ButtonProps) {
           }
         }
       `}
+      ref={ref}
     >
       {value || children}
     </a>
   );
-}
+});
