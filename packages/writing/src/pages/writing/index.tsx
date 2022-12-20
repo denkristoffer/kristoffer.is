@@ -67,7 +67,7 @@ export default function Index() {
           </li>
         </Ul>
 
-        <NextLink href="/writing/things" passHref>
+        <NextLink href="/writing/things" legacyBehavior passHref>
           <Button
             css={css`
               margin: 50px 20px 0;
