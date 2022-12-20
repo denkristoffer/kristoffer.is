@@ -17,7 +17,7 @@ const isUrlObject = (toTest: NextHref): toTest is UrlObject => {
 export default function Link({ href, ...props }: LinkProps) {
   if (isUrlObject(href) || href.startsWith("/") || href.startsWith("#")) {
     return (
-      <NextLink href={href} passHref>
+      <NextLink href={href} legacyBehavior passHref>
         <A {...props} />
       </NextLink>
     );
