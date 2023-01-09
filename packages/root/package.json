@@ -22,7 +22,7 @@
     "@types/node": "18.11.9",
     "eslint": "8.30.0",
     "eslint-config-next": "13.0.7",
-    "prettier": "2.8.1"
+    "prettier": "2.8.2"
   },
   "license": "MIT"
 }
