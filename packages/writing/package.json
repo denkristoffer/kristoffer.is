@@ -45,7 +45,7 @@
     "@types/mdast": "3.0.10",
     "@types/node": "18.11.9",
     "eslint": "8.30.0",
-    "eslint-config-next": "13.0.7"
+    "eslint-config-next": "13.1.4"
   },
   "license": "(MIT OR CC-BY-SA-4.0)"
 }
