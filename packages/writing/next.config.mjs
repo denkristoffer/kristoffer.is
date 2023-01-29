@@ -45,6 +45,7 @@ export default withMDX({
   },
 
   experimental: {
+    appDir: true,
     esmExternals: true,
   },
 

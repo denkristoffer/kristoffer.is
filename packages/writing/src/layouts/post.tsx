@@ -1,12 +1,11 @@
 import { Fragment } from "react";
 import { css } from "@emotion/react";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import dayjs from "dayjs";
-import Image from "next/image";
 
 import { H1 } from "../components/text";
 import Link from "../components/link";
+import Analytics from "../app/components/analytics";
 
 export interface Metadata {
   date: string;
@@ -22,8 +21,6 @@ interface PostLayoutProps {
 
 export default function PostLayout({ children, metadata }: PostLayoutProps) {
   const date = dayjs(metadata.date);
-  const { pathname } = useRouter();
-  const slug = pathname.replace("/writing/", "");
 
   return (
     <Fragment>
@@ -99,23 +96,7 @@ export default function PostLayout({ children, metadata }: PostLayoutProps) {
         <Link href="/writing/things">
           List of everything I&rsquo;ve written
         </Link>
-        {typeof window !== "undefined" &&
-        window.location.host === "kristoffer.is" ? (
-          <div
-            css={css`
-              height: 0;
-              width: 0;
-            `}
-          >
-            <Image
-              alt=""
-              height={0}
-              src={`https://kristoffer.goatcounter.com/count?p=/writing/${slug}`}
-              width={0}
-              unoptimized
-            />
-          </div>
-        ) : null}
+        <Analytics />
       </footer>
     </Fragment>
   );
