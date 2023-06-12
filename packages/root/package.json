@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@types/react": "18.0.28",
+    "@types/react": "18.2.11",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
