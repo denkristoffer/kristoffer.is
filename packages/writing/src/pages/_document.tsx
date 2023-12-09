@@ -1,14 +1,6 @@
-import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { extractCritical } from "@emotion/server";
-import type { EmotionCritical } from "@emotion/server/create-instance";
 
-interface DocumentProps {
-  css: EmotionCritical["css"];
-  ids: EmotionCritical["ids"];
-}
-
-export default class DocumentWithLang extends Document<DocumentProps> {
+export default class DocumentWithLang extends Document {
   render() {
     return (
       <Html lang="en">
@@ -17,11 +9,6 @@ export default class DocumentWithLang extends Document<DocumentProps> {
           <link rel="apple-touch-icon" href="/favicon-180.png" />
           <link rel="mask-icon" href="/favicon.svg" color="#ff6c6c" />
           <link rel="manifest" href="/manifest.webmanifest" />
-
-          <style
-            data-emotion-css={this.props.ids.join(" ")}
-            dangerouslySetInnerHTML={{ __html: this.props.css }}
-          />
         </Head>
 
         <body>
@@ -32,11 +19,3 @@ export default class DocumentWithLang extends Document<DocumentProps> {
     );
   }
 }
-
-DocumentWithLang.getInitialProps = async (context) => {
-  const initialProps = await Document.getInitialProps(context);
-  const page = await context.renderPage();
-  const styles = extractCritical(page.html);
-
-  return { ...initialProps, ...page, ...styles };
-};

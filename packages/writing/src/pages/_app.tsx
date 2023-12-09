@@ -1,6 +1,6 @@
-import React from "react";
 import { AppProps } from "next/app";
-import { css, Global, ThemeProvider } from "@emotion/react";
+import { CacheProvider, css, Global, ThemeProvider } from "@emotion/react";
+import createCache from "@emotion/cache";
 import { MDXProvider } from "@mdx-js/react";
 
 import { theme } from "../lib/theme";
@@ -18,6 +18,8 @@ import {
   Text,
   Ul,
 } from "../components/text";
+
+const cache = createCache({ key: "next" });
 
 const mdxComponents = {
   a: Link,
@@ -37,33 +39,35 @@ const mdxComponents = {
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
-      <MDXProvider components={mdxComponents}>
-        <Global
-          styles={(theme) => css`
-            * {
-              box-sizing: border-box;
-              margin: 0;
-              padding: 0;
-            }
-
-            body {
-              background: ${theme.colors.background};
-              color: ${theme.colors.color};
-              font-family: ${theme.typography.fontFamily};
-            }
-
-            @media (prefers-color-scheme: dark) {
-              body {
-                background: ${theme.dark.background};
-                color: ${theme.dark.color};
+    <CacheProvider value={cache}>
+      <ThemeProvider theme={theme}>
+        <MDXProvider components={mdxComponents}>
+          <Global
+            styles={(theme) => css`
+              * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
               }
-            }
-          `}
-        />
 
-        <Component {...pageProps} />
-      </MDXProvider>
-    </ThemeProvider>
+              body {
+                background: ${theme.colors.background};
+                color: ${theme.colors.color};
+                font-family: ${theme.typography.fontFamily};
+              }
+
+              @media (prefers-color-scheme: dark) {
+                body {
+                  background: ${theme.dark.background};
+                  color: ${theme.dark.color};
+                }
+              }
+            `}
+          />
+
+          <Component {...pageProps} />
+        </MDXProvider>
+      </ThemeProvider>
+    </CacheProvider>
   );
 }
